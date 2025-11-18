@@ -1,22 +1,10 @@
 @media screen and (max-width: 400px) {
-  #features {
-    padding: 20px;
-    width: 111%;
-  }
-  #about,
-  #services,
-  #testimonials,
-  #team,
-  #contact,
-  #footer {
-    width: 111%;
+  /* Ajustes generales en móvil, si los ves necesarios más adelante */
+  #nosotros {
+    width: 100%;
   }
 
-  #portfolio {
-    width: 110%;
-  }
-
-  header #header div #intro{
-    border: 3px red solid;
+  #catalogo {
+    width: 100%;
   }
 }
