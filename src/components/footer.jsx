@@ -62,30 +62,33 @@ export const Footer = () => {
               <div className="social">
                 <ul>
                   <li>
+                    <i className="fa fa-instagram"></i>{" "}
                     <a
                       href="https://www.instagram.com/yeyubabystore"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa fa-instagram"></i>
+                      @yeyubabystore
                     </a>
                   </li>
                   <li>
+                    <i className="fa fa-facebook"></i>{" "}
                     <a
                       href="https://www.facebook.com/yeyubabystore"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa fa-facebook"></i>
+                      /yeyubabystore
                     </a>
                   </li>
                   <li>
+                    <i className="fa fa-whatsapp"></i>{" "}
                     <a
                       href="https://wa.me/51945307158"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa fa-whatsapp"></i>
+                      WhatsApp Yeyu Baby Store
                     </a>
                   </li>
                 </ul>
