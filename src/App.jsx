@@ -3,6 +3,7 @@ import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { About } from "./components/about";
 import { Footer } from "./components/footer";
+import { Catalog } from "./components/Catalog";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 
@@ -33,20 +34,7 @@ const App = () => {
 
       {/* CATALOGO */}
       {currentSection === "catalogo" && (
-        <div
-          id="catalogo"
-          className="text-center"
-          style={{ padding: "60px 0" }}
-        >
-          <div className="container">
-            <h2>Catálogo</h2>
-            <p>
-              Muy pronto encontrarás aquí todos los productos de Yeyu Baby
-              Store: tarjetas Montessori, aquashoes, libros, juguetes
-              sensoriales y más 🐣✨
-            </p>
-          </div>
-        </div>
+        <Catalog products={landingPageData.Products} />
       )}
 
       {/* NOSOTROS */}

@@ -7,4 +7,38 @@
   #catalogo {
     width: 100%;
   }
+
+  /* Cards de productos del catálogo */
+  .yb-product-card {
+    min-height: 260px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .yb-product-card img {
+    max-height: 180px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .yb-product-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+  }
+
+  .yb-product-category {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+
+  /* Ajustes responsive básicos */
+  @media screen and (max-width: 400px) {
+    #nosotros,
+    #catalogo {
+      width: 100%;
+    }
+  }
+
 }

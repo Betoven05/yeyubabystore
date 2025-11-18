@@ -88,7 +88,7 @@ export const Footer = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      WhatsApp Yeyu Baby Store
+                      Yeyu Baby Store
                     </a>
                   </li>
                 </ul>
