@@ -1,10 +1,10 @@
 {
   "Header": {
-    "title": "Frankie's Bakery",
-    "paragraph": "Bread, Cookies, Pastries!"
+    "title": "Yeyu Baby Store",
+    "paragraph": "Juguetes, ropa y mas para bebes!"
   },
   "About": {
-    "paragraph": "I'm Frankie G Riviera, This is a website for a fictional bakery that is used to demonstrate technological scenarios using Microsoft Azure."
+    "paragraph": "Somos Yeyu Baby Store una tienda dedicada a la venta de productos para bebes, contamos con una amplia variedad de productos de alta calidad y a precios accesibles. Nuestra misión es brindar a los padres y cuidadores todo lo necesario para el cuidado y bienestar de sus pequeños."
   },
   "Apphostingguide": {
     "paragraph": "The Azure Application Hosting Guide brings clarity to individuals, startups and businesses to help them navigate the complex world of application hosting in Azure. With so many offerings it can be challenging to understand the pros, cons and ideal scenarios for each service. This guide is your solution",
