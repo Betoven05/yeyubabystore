@@ -30,7 +30,7 @@ export const Navigation = ({ currentSection, onSectionChange }) => {
           {/* Marca / logo texto */}
           <a
             className="navbar-brand page-scroll"
-            href="#"
+            href="/#inicio" 
             onClick={(e) => handleClick(e, "inicio")}
           >
             Yeyu Baby Store
@@ -40,17 +40,26 @@ export const Navigation = ({ currentSection, onSectionChange }) => {
         <div className="collapse navbar-collapse" id="navbar-main">
           <ul className="nav navbar-nav navbar-right">
             <li className={isActive("inicio")}>
-              <a href="#" onClick={(e) => handleClick(e, "inicio")}>
+              <a
+                href="/#inicio"
+                onClick={(e) => handleClick(e, "inicio")}
+              >
                 Inicio
               </a>
             </li>
             <li className={isActive("catalogo")}>
-              <a href="#" onClick={(e) => handleClick(e, "catalogo")}>
+              <a
+                href="/#catalogo"
+                onClick={(e) => handleClick(e, "catalogo")}
+              >
                 Catálogo
               </a>
             </li>
             <li className={isActive("nosotros")}>
-              <a href="#" onClick={(e) => handleClick(e, "nosotros")}>
+              <a
+                href="/#nosotros"
+                onClick={(e) => handleClick(e, "nosotros")}
+              >
                 Nosotros
               </a>
             </li>
