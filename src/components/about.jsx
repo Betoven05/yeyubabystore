@@ -8,7 +8,7 @@ export const About = (props) => {
           {/* Imagen */}
           <div className="col-xs-12 col-md-6">
             <img
-              src="img/ProfilePicGreySweatshirtBayPicCropped.jpg"
+              src="img/yeyubabystore_web_03.png"
               className="img-responsive"
               alt="Foto del equipo de Yeyu Baby Store"
             />

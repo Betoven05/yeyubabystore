@@ -5,5 +5,61 @@
   },
   "About": {
     "paragraph": "Somos Yeyu Baby Store, una tienda virtual dedicada a traer juguetes didácticos, ropa y accesorios para bebés. Elegimos cada producto pensando en la comodidad, seguridad y desarrollo de los más pequeños."
-  }
+  },
+  "Products": [
+    {
+      "id": "prod-aquashoes-bebe-c1",
+      "name": "Aquashoes para Bebes",
+      "category": "Verano",
+      "tag": "NUEVO",
+      "isSale": false,
+      "image": "img/productos/AquaShoes_Bebe_C1_IA_Logo_3.png",
+      "description": "Zapatillas antideslizante, transpirables y cómodas. Perfectas para el verano , la piscina y la playa."
+    },
+    {
+      "id": "prod-bolsa-panalera-sunveno",
+      "name": "Bolsa Pañales - Sunveno",
+      "category": "Estimulación",
+      "tag": "TOP",
+      "isSale": false,
+      "image": "img/productos/Bolsa_Pañales_Sunveno_IA_Logo_1.png",
+      "description": "Bolsa Pañalera. Tamaño Standard. Marca Sunveno."
+    },
+    {
+      "id": "prod-casco-seguridad-bebe",
+      "name": "Casco de Seguridad para Bebes",
+      "category": "Verano",
+      "tag": "VERANO",
+      "isSale": false,
+      "image": "img/productos/Casco_Seguridad_Bebe_IA_Logo_2.png",
+      "description": "Casco de Seguridad Anticaída. Protege sus travesuras desde el primer paso."
+    },
+    {
+      "id": "prod-clip-sujetador-chupon",
+      "name": "Clips Sujetadores de Chupon",
+      "category": "Libros",
+      "tag": "NUEVO",
+      "isSale": false,
+      "image": "img/productos/Clip_Sujetador_Chupon_IA_Logo_3.png",
+      "description": "Clips Sujetadores de Chupón. Pack de 3 clips fáciles de usar"
+    },
+    {
+      "id": "prod-gorro-algodon-orejas-animales",
+      "name": "Gorros con Orejas de Animales",
+      "category": "Juguetes",
+      "tag": "SALE",
+      "isSale": false,
+      "image": "img/productos/Gorro_Algodon_Orejas_Animales_IA_Logo_2.png",
+      "description": "Gorros con diseños de ositos. Suaves y abrigadores"
+    },
+    {
+      "id": "prod-granja-zanahorias-montessori",
+      "name": "Granja de Zanahorias Montessori",
+      "category": "Ropa",
+      "tag": "VERANO",
+      "isSale": false,
+      "image": "img/productos/Granja_Zanahorias_Montessori_IA_Logo_1.png",
+      "description": "Juego de Zanahorias de tela suave para bebés y niños."
+    }
+  ]
 }

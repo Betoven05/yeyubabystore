@@ -12,7 +12,7 @@ export const Footer = () => {
               <h4>Envíos a todo el Perú</h4>
               <p>
                 Los envíos para Lima Metropolitana son de <strong>24 a 48 horas</strong>.
-                Para provincias, de <strong>2 a 5 días hábiles</strong> una vez confirmado el pago.
+                Para provincias, de <strong>2 a 3 días hábiles</strong> una vez confirmado el pago.
               </p>
             </div>
 
