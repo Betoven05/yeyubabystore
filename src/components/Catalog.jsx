@@ -27,7 +27,7 @@ export const Catalog = ({ products = [] }) => {
                 {product.image && (
                   <img
                     src={product.image}
-                    alt={product.name}
+                    alt={`${product.name} - Yeyu Baby Store`}
                     className="img-responsive"
                   />
                 )}
