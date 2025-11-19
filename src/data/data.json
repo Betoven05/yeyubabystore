@@ -71,13 +71,40 @@
       "description": "Libros de Estimulación con Texturas Montessori."
     },
     {
-      "id": "prod-media-sonajero-1",
+      "id": "prod-zapamedia-animales-bebe",
+      "name": "Zapamedias de Animales para Bebes",
+      "category": "Estimulación",
+      "tag": "TOP",
+      "isSale": false,
+      "image": "img/productos/Media_Animales_IA_Logo_1.png",
+      "description": "Zapamedias de Animales para Bebes."
+    },
+    {
+      "id": "prod-media-sonajero-munecas",
       "name": "Medias Sonajeras + Muñequeras",
       "category": "Estimulación",
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/Media_Sonajero_IA_Logo_1.png",
       "description": "Medias Sonajeros + Muñequeras para Bebés."
+    },
+    {
+      "id": "prod-media-algodon-oso",
+      "name": "Medias de Algodon con diseño de Oso",
+      "category": "Estimulación",
+      "tag": "TOP",
+      "isSale": false,
+      "image": "img/productos/Medias_Algodon_Oso_IA_Logo_2.png",
+      "description": "Medias de Algodon con diseño de Oso."
+    },
+    {
+      "id": "prod-mini-bolsa-panales-happyflute",
+      "name": "MiniBolsa de Pañales Happyflute",
+      "category": "Estimulación",
+      "tag": "TOP",
+      "isSale": false,
+      "image": "img/productos/MiniBolsa_Pañales_Happyflute_IA_Logo_1.png",
+      "description": "MiniBolsa de Pañales Happyflute."
     },
     {
       "id": "prod-mordedor-animales",
@@ -89,6 +116,24 @@
       "description": "Guante Mordedor de Animales."
     },
     {
+      "id": "prod-mordedor-control-remoto",
+      "name": "Mordedor de Control Remoto",
+      "category": "Estimulación",
+      "tag": "TOP",
+      "isSale": false,
+      "image": "img/productos/Mordedor_Control_Remoto_IA_Logo_1.png",
+      "description": "Mordedor de Control Remoto."
+    },
+    {
+      "id": "prod-mordedor-guante-colores",
+      "name": "Guante Mordedor de Colores",
+      "category": "Estimulación",
+      "tag": "TOP",
+      "isSale": false,
+      "image": "img/productos/Mordedores_Guante_Colores_IA_Logo_1.png",
+      "description": "Guante Mordedor de Colores."
+    },
+    {
       "id": "prod-muneco-felpa-apego",
       "name": "Muñeco de Felpa de Apego",
       "category": "Estimulación",
@@ -98,13 +143,31 @@
       "description": "Muñeco de Felpa de Apego."
     },
     {
-      "id": "prod-mordedor-animales",
+      "id": "prod-muselina-pack5-happyflute",
+      "name": "Pack 5 Muselinas 60*60 Happyflute",
+      "category": "Estimulación",
+      "tag": "TOP",
+      "isSale": false,
+      "image": "img/productos/Muselina_6060_Pack5_Happyflute_IA_Logo_2.png",
+      "description": "Pack 5 Muselinas 60*60 Happyflute."
+    },
+    {
+      "id": "prod-muselina-algodon-happyflute",
       "name": "Muselinas para Bebes Happyflute",
       "category": "Estimulación",
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/Muselina_Happyflute_IA_Logo_6.png",
       "description": "Muselinas para Bebes Happyflute."
+    },
+    {
+      "id": "prod-panal-entrenamiento-happyflute",
+      "name": "Pañales de Entrenamiento Happyflute",
+      "category": "Estimulación",
+      "tag": "TOP",
+      "isSale": false,
+      "image": "img/productos/Pañal_Entrenamiento_Happyflute_IA_Logo_1.png",
+      "description": "Pañales de Entrenamiento Happyflute."
     },
     {
       "id": "prod-panal-ecologico-happyflute",
@@ -123,6 +186,15 @@
       "isSale": false,
       "image": "img/productos/Pantuflas_Basicas_Bebe_C1_IA_Logo_1.png",
       "description": "Zapatos Pantuflas de Felpa para Bebes."
+    },
+    {
+      "id": "prod-sombrero-algodon-basico",
+      "name": "Sombrero de Algodon Basico",
+      "category": "Estimulación",
+      "tag": "TOP",
+      "isSale": false,
+      "image": "img/productos/Sombrero_Sol_Algodon_Ninos_IA_Logo_2.png",
+      "description": "Sombrero de Algodon Basico."
     },
     {
       "id": "prod-sombrero-sol-diseno-c1",
