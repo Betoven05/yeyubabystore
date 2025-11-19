@@ -29,7 +29,10 @@ const App = () => {
 
       {/* INICIO */}
       {currentSection === "inicio" && (
-        <Header data={landingPageData.Header} />
+        <Header
+          data={landingPageData.Header}
+          onVerCatalogo={() => setCurrentSection("catalogo")}
+        />
       )}
 
       {/* CATALOGO */}

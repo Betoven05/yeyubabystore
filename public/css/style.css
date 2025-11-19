@@ -10,10 +10,14 @@ html {
   height: 100% !important;
 }
 
-/* navbar fija: evitar que tape el contenido */
 body {
-  padding-top: 70px;
+  padding-top: 85px;
 }
+
+header {
+  margin-bottom: 30px;
+}
+
 
 @media (max-width: 768px) {
   body {
@@ -91,14 +95,14 @@ hr {
 
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 12px;
   transition: all 0.8s;
 }
 
 #menu.navbar-default {
   background-color: #fff;
   border-color: rgba(231, 231, 231, 0);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
 }
 
 #menu a.navbar-brand {
@@ -117,7 +121,7 @@ hr {
   font-weight: 400;
   padding: 8px 2px;
   border-radius: 0;
-  margin: 9px 20px 0;
+  margin: 8px 20px 0;
   position: relative;
 }
 
@@ -327,7 +331,8 @@ header .intro-text {
 /* Footer Section */
 #footer {
   background: #f6f6f6;
-  padding: 30px 0;
+  padding: 20px 0;
+  margin-top: 30px;
 }
 
 #footer p {

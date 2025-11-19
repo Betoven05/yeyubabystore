@@ -1,6 +1,15 @@
 import React from "react";
 
 export const Header = (props) => {
+  const { data, onVerCatalogo } = props;
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (onVerCatalogo) {
+      onVerCatalogo();
+    }
+  };
+
   return (
     <header id="inicio">
       <div className="intro">
@@ -9,19 +18,20 @@ export const Header = (props) => {
             <div className="row">
               <div className="col-md-12 intro-text">
                 <h1>
-                  {props.data ? props.data.title : "Yeyu Baby Store"}
+                  {data ? data.title : "Yeyu Baby Store"}
                   <span></span>
                 </h1>
 
                 <p>
-                  {props.data
-                    ? props.data.paragraph
+                  {data
+                    ? data.paragraph
                     : "Productos seleccionados para acompañar cada etapa de tu bebé."}
                 </p>
 
                 <a
-                  href="#catalogo"
+                  href="/#catalogo"
                   className="btn btn-custom btn-lg page-scroll"
+                  onClick={handleClick}
                 >
                   Ver catálogo
                 </a>{" "}
