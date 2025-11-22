@@ -247,7 +247,6 @@ a:focus,
   margin-bottom: 10px;
 }
 
-/* Cuando la pantalla es >= 530px aumentar tamaño */
 @media (min-width: 530px) {
   .intro h1 {
     font-size: 82px;
@@ -280,14 +279,7 @@ header .intro-text {
   }
 }
 
-/*
-header .intro-text {
-  padding-top: 350px;
-  padding-bottom: 200px;
-  text-align: center;
-}/
-
-/* Sección Nosotros (antes #about) */
+/* Sección Nosotros */
 #nosotros {
   padding: 100px 0;
 }
@@ -360,6 +352,24 @@ header .intro-text {
 
 #footer a:hover {
   border-bottom: 2px solid #48B749;
+}
+
+.yb-footer-icon {
+  width: 42px !important;
+  height: 42px !important;
+  object-fit: contain;
+  margin-bottom: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .yb-footer-icon {
+    width: 34px !important;
+    height: 34px !important;
+    margin-bottom: 8px;
+  }
 }
 
 /* Redes sociales en el footer */
@@ -447,4 +457,97 @@ header .intro-text {
 /* que la caption no quede pegada */
 .yb-product-card .caption {
   padding: 12px 15px 15px;
+}
+
+/* Contenedor del hero / carrusel */
+#yb-hero-carousel {
+  position: relative;
+  overflow: hidden;
+  /* sin height fijo: dejamos que la imagen mande */
+}
+
+/* Imagen del banner: que se vea COMPLETA y responsiva */
+.yb-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* sin max-height, sin object-fit para no cortar nada */
+}
+
+
+/* Texto sobre el banner */
+.yb-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.25); 
+  z-index: 1;
+}
+
+/* Controles del carrusel por encima del overlay */
+#yb-hero-carousel .carousel-control,
+#yb-hero-carousel .carousel-indicators {
+  z-index: 2;
+}
+
+/* Flechas del carrusel usando Font Awesome */
+#yb-hero-carousel .carousel-control {
+  background-image: none;        /* sin degradado oscuro a los lados */
+  width: 8%;                     /* ancho del área clickeable */
+}
+
+#yb-hero-carousel .carousel-control i.fa {
+  font-size: 28px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#yb-hero-carousel .left.carousel-control i.fa {
+  left: 15px;
+}
+
+#yb-hero-carousel .right.carousel-control i.fa {
+  right: 15px;
+}
+
+
+.yb-hero-overlay h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.yb-hero-overlay p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  #yb-hero-carousel {
+    height: 40vh;
+    min-height: 240px;
+  }
+
+  .yb-hero-overlay p {
+    font-size: 16px;
+  }
+}
+
+/* Centrado de bloques del footer */
+#footer-info .footer-feature {
+  text-align: center !important;
+}
+
+#footer-info .footer-feature h4,
+#footer-info .footer-feature p {
+  text-align: center !important;
 }

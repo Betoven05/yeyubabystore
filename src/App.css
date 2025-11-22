@@ -50,3 +50,8 @@
     min-height: 260px;
   }
 }
+
+.footer-feature h4,
+.footer-feature p {
+  text-align: center;
+}

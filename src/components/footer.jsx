@@ -8,7 +8,8 @@ export const Footer = () => {
         <div className="container">
           <div className="row">
             {/* Envíos a todo el Perú */}
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6 footer-feature">
+              <img src="/img/icons/envios.png" alt="Envíos" className="yb-footer-icon" />
               <h4>Envíos a todo el Perú</h4>
               <p>
                 Los envíos para Lima Metropolitana son de <strong>24 a 48 horas</strong>.
@@ -17,7 +18,8 @@ export const Footer = () => {
             </div>
 
             {/* Pago y entrega coordinada */}
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6 footer-feature">
+              <img src="/img/icons/pagos.png" alt="Pagos" className="yb-footer-icon" />
               <h4>Pago y entrega coordinada</h4>
               <p>
                 Realizamos <strong>entregas contraentrega coordinadas</strong> en puntos seguros de Lima
@@ -27,7 +29,8 @@ export const Footer = () => {
             </div>
 
             {/* Nosotros */}
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6 footer-feature">
+              <img src="/img/icons/nosotros.png" alt="Nosotros" className="yb-footer-icon" />
               <h4>Nosotros</h4>
               <p>
                 Somos <strong>Yeyu Baby Store</strong>, una tienda online especializada en productos
@@ -37,7 +40,8 @@ export const Footer = () => {
             </div>
 
             {/* Datos de contacto */}
-            <div className="col-md-3 col-sm-6">
+            <div className="col-md-3 col-sm-6 footer-feature">
+              <img src="/img/icons/atencion.png" alt="Atención" className="yb-footer-icon" />
               <h4>Atención y contacto</h4>
               <p>
                 <strong>Horario de atención:</strong>

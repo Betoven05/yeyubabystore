@@ -54,7 +54,9 @@ export const Product = () => {
             {product.tag ? ` · ${product.tag}` : ""}
           </p>
 
-          <p style={{ marginTop: 20 }}>{product.description}</p>
+          <p style={{ marginTop: 20, whiteSpace: "pre-line" }}>
+            {product.description}
+          </p>
 
           <p style={{ marginTop: 30, fontSize: 14 }}>
             ¿Te interesa este producto? Escríbenos por WhatsApp y te contamos
