@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Header = (props) => {
   return (
@@ -86,12 +87,12 @@ export const Header = (props) => {
                 */}
 
                 {/* Botón visible */}
-                <a
-                  href="/catalogo"
+                <Link
+                  to="/catalogo"
                   className="btn btn-custom btn-lg"
                 >
                   Ver catálogo
-                </a>
+                </Link>
               </div>
             </div>
           </div>
