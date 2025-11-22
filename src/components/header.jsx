@@ -1,14 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Header = (props) => {
-  const { data, onVerCatalogo } = props;
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    if (onVerCatalogo) {
-      onVerCatalogo();
-    }
-  };
+  const { data } = props;
 
   return (
     <header id="inicio">
@@ -28,13 +22,12 @@ export const Header = (props) => {
                     : "Productos seleccionados para acompañar cada etapa de tu bebé."}
                 </p>
 
-                <a
-                  href="/#catalogo"
+                <Link
+                  to="/catalogo"
                   className="btn btn-custom btn-lg page-scroll"
-                  onClick={handleClick}
                 >
                   Ver catálogo
-                </a>{" "}
+                </Link>{" "}
               </div>
             </div>
           </div>

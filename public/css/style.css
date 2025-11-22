@@ -268,10 +268,24 @@ a:focus,
 }
 
 header .intro-text {
+  padding-top: 450px;
+  padding-bottom: 160px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header .intro-text {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+}
+
+/*
+header .intro-text {
   padding-top: 350px;
   padding-bottom: 200px;
   text-align: center;
-}
+}/
 
 /* Sección Nosotros (antes #about) */
 #nosotros {
@@ -370,4 +384,67 @@ header .intro-text {
     margin: 50px 0;
     width: 100%;
   }
+}
+/* === Catálogo Yeyu === */
+
+.yb-catalog-section {
+  padding: 90px 0 60px; /* menos sangría que antes */
+}
+
+.yb-catalog-section h2 {
+  text-align: center;
+}
+
+.yb-catalog-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+}
+
+/* columnas de producto */
+.yb-product-column {
+  margin-bottom: 30px;
+}
+
+/* card de producto */
+.yb-product-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  min-height: 280px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.yb-product-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+}
+
+/* imagen de producto */
+.yb-product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* recorta bonito sin deformar */
+}
+
+/* textos */
+.yb-product-name {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.yb-product-category {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+/* que la caption no quede pegada */
+.yb-product-card .caption {
+  padding: 12px 15px 15px;
 }

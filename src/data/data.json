@@ -10,200 +10,201 @@
     {
       "id": "prod-aquashoes-bebe-c1",
       "name": "Aquashoes para Bebes",
-      "category": "Verano",
+      "category": ["Verano", "Ropa"],
       "tag": "VERANO",
       "isSale": false,
       "image": "img/productos/aquashoes-bebe-peru-yeyu.png",
-      "description": "Zapatillas antideslizante, transpirables y cómodas. Perfectas para el verano , la piscina y la playa."
+      "description": "👶🏻 Aqua Shoes - Zapatillas de Piscina para Bebes 🏖️\n\nDisfruta del verano con tu bebé de forma segura 😊.\nZapatillas antideslizantes para piscina, transpirables y flexibles. Totalmente respetuosas con el pie de tu bebé 👶🏻.\n\n📐 Tallas\n• XXS: 12 cm - Edad entre 3 a 9 meses\n• XS: 12.5 cm - Edad entre 6 a 12 meses\n• S: 13.5 cm - Edad entre 12 a 24 meses\n• M: 14.5 cm - Edad entre 24 a 36 meses"
     },
     {
       "id": "prod-bolsa-panalera-sunveno",
       "name": "Bolsa Pañales - Sunveno",
-      "category": "Accesorios",
+      "category": ["Accesorios"],
       "tag": "VERANO",
       "isSale": false,
       "image": "img/productos/bolsa-sunveno-peru-yeyu.png",
-      "description": "Bolsa Pañalera. Tamaño Standard. Marca Sunveno."
+      "description": "👜 Bolso de Pañales Sunveno\n\nPráctico, resistente y siempre listo para ti 💕\n\n✔️ Plegable y portátil\n✔️ Impermeable y fácil de limpiar\n📏 Medidas: 21 × 17 × 7 cm\n🍼 Capacidad: hasta 10 pañales\n🔨 Material: Paño Oxford + Nylon de alta calidad"
     },
     {
       "id": "prod-casco-seguridad-bebe",
       "name": "Casco de Seguridad para Bebes",
-      "category": "Ropa",
+      "category": ["Ropa", "Accesorios"],
       "tag": "NUEVO",
       "isSale": false,
       "image": "img/productos/casco-seguridad-bebe-yeyu.png",
-      "description": "Casco de Seguridad Anticaída. Protege sus travesuras desde el primer paso."
+      "description": "🛡️ Casco de Seguridad Anticaídas\n\nProtección ligera y cómoda para tu peque 🚼👶\n\n🔨 Material: 80 % algodón + espuma IXPE\n✨ Acolchado de alta densidad y diseño evolutivo\n📏 Ajustable: 38–48 cm con pega-pega\n🎭 Modelos: clásicos y con orejitas\n🎨 Colores: varios\n⚖️ Peso: solo 80 g\n👶 Edad recomendada: 6–48 meses"
     },
     {
       "id": "prod-clip-sujetador-chupon",
       "name": "Clips Sujetadores de Chupon",
-      "category": "Accesorios",
+      "category": ["Accesorios"],
       "tag": "NUEVO",
       "isSale": false,
       "image": "img/productos/clip-sujetador-chupon-peru-yeyu.png",
-      "description": "Clips Sujetadores de Chupón. Pack de 3 clips fáciles de usar"
+      "description": "📎 Clips Sujetadores de Chupón\nAdiós a los chupetes perdidos 👶🏻💖\n\n⭐ Pack de 3 clips fáciles de usar\n\n📐 Longitud: 25 × 2.5 cm\n🔨 Material: poliéster + clip plástico resistente\n🎨 Múltiples colores y diseños"
     },
     {
       "id": "prod-gorro-algodon-orejas-animales",
       "name": "Gorros con Orejas de Animales",
-      "category": "Ropa",
+      "category": ["Ropa"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/gorro-algodon-orejas-peru-yeyu.png",
-      "description": "Gorros con diseños de ositos. Suaves y abrigadores"
+      "description": "🧸 ¡Ternura y abrigo para los más pequeñitos! 💕\n\n🧢 Gorros de osito:\nLana suave, cubre orejitas y súper cómodos (45–50 cm aprox.)."
     },
     {
       "id": "prod-granja-zanahorias-montessori",
       "name": "Granja de Zanahorias Montessori",
-      "category": "Montessori",
+      "category": ["Juguetes", "Estimulación"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/granja-zanahorias-montessori-peru-yeyu.png",
-      "description": "Juego de Zanahorias de tela suave para bebés y niños."
+      "description": "🥕 Granja de Zanahorias Montessori\n\n✨ ¡Diversión y aprendizaje en un solo juego!\n\nIncluye 👉 9 zanahorias + base de granja 🍃\n📏 Medidas: Base 15.5 × 15.5 × 4 cm / Zanahorias 9.5 × 4 cm\n🔨 Material: felpa suave con relleno de algodón\n💡 Ideal para estimular la motricidad fina y el juego sensorial"
     },
     {
       "id": "prod-libro-estimulacion-animales",
       "name": "Libros de estimulación para bebes",
-      "category": "Estimulación",
+      "category": ["Juguetes", "Estimulación"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/libro_estimulacion_animales-peru-yeyu.png",
-      "description": "Libros de Estimulación con Texturas Montessori."
+      "description": "📚 Libros de Estimulación con Texturas Montessori\nDescubre el mundo con tacto y color desde los primeros meses 🐯🦈\n\n📐 Tamaños: 13 × 13 cm o 15 × 18 cm\n🐾 Temas: granja, selva, marinos y mucho más\n👶🏻 Edad recomendada: 3–18 meses"
     },
     {
       "id": "prod-zapamedia-animales-bebe",
       "name": "Zapamedias de Animales para Bebes",
-      "category": "Estimulación",
+      "category": ["Ropa", "Estimulación"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/zapamedia_animales-peru-yeyu.png",
-      "description": "Zapamedias de Animales para Bebes."
+      "description": "🧸 Zapatitos media con diseño de animalitos 🐰🦊🐻\nSuaves, cómodos y con suela antideslizante para acompañar cada paso de tu bebé 💕\n\n📏 Tallas disponibles:\n• S: 0–6 meses (plantilla de 9 a 10 cm)\n• M: 6–18 meses (plantilla de 11 a 12 cm)\n• L: 12–24 meses (plantilla de 12.5 a 13.5 cm)\n\n🧶 Material: algodón + poliéster, flexibles y transpirables 🌿"
     },
     {
       "id": "prod-media-sonajero-munecas",
       "name": "Medias Sonajeras + Muñequeras",
-      "category": "Estimulación",
+      "category": ["Juguetes", "Estimulación"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/media-sonajera-peru-yeyu.png",
-      "description": "Medias Sonajeros + Muñequeras para Bebés."
+      "description": "🧦 Medias Sonajeros + Muñequeras para Bebés\nDespierta sus sentidos con cada movimiento 🤩\n\n4 piezas: 2 medias (19 × 6.5 cm) + 2 muñequeras (15.6 × 3.7 cm)\n🔨 Material: felpa suave y segura\n💡 Estimulan tacto, sonido y coordinación 👶🏻"
     },
     {
       "id": "prod-media-algodon-oso",
       "name": "Medias de Algodon con diseño de Oso",
-      "category": "Estimulación",
+      "category": ["Ropa"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/media-algodon-oso-peru-yeyu.png",
-      "description": "Medias de Algodon con diseño de Oso."
+      "description": "🧦 Medias con diseños de ositos\n100 % algodón, interior afelpado y suela antideslizante 🐾\n\nTalla estándar — recomendado de 6 a 24 meses\n📏 Tamaño: planta 10 cm / largo 14 cm"
     },
     {
       "id": "prod-mini-bolsa-panales-happyflute",
       "name": "MiniBolsa de Pañales Happyflute",
-      "category": "Estimulación",
+      "category": ["Accesorios"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/minibolsa-pañales-happyflute-peru-yeyu.png",
-      "description": "MiniBolsa de Pañales Happyflute."
+      "description": "🎒 Mini Bolsa Pañalera HappyFlute\n\nCompacta, práctica y lista para acompañarte ✨\n📏 Medidas: 18 cm ancho × 25 cm alto\n🔨 Material: PUL impermeable (poliéster)\n🎨 Modelos: varios diseños disponibles"
     },
     {
       "id": "prod-mordedor-animales",
       "name": "Guante Mordedor de Animales",
-      "category": "Estimulación",
+      "category": ["Mordedores", "Estimulación", "Juguetes"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/mordedor-animales-bebe-peru-yeyu.png",
-      "description": "Guante Mordedor de Animales."
+      "description": "✨ Guante Mordedor de Animales 🐱🐣🐻🐨\nAlivio y diversión al alcance de sus manitas 🤲💚\n\n👩🏻‍⚕️ Ayudan a calmar las molestias de la dentición 🦷\n✔️ Silicona libre de BPA\n✔️ Diseños: gato, oso, castor, pollito, koala, león\n✔️ Colores: celeste, crema, rojo, verde, rosado y más"
     },
     {
       "id": "prod-mordedor-control-remoto",
       "name": "Mordedor de Control Remoto",
-      "category": "Estimulación",
+      "category": ["Mordedores", "Estimulación", "Juguetes"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/mordedor-controlremoto-bebe-peru-yeyu.png",
-      "description": "Mordedor de Control Remoto."
+      "description": "✨ Mordedor Control Remoto 🎮\nAlivio y diversión al alcance de sus manitas 🤲💚\n\n👩🏻‍⚕️ Ayudan a calmar las molestias de la dentición 🦷\n✔️ Silicona 100 % libre de BPA\n✔️ Modelos variados"
     },
     {
       "id": "prod-mordedor-guante-colores",
       "name": "Guante Mordedor de Colores",
-      "category": "Estimulación",
+      "category": ["Mordedores", "Estimulación", "Juguetes"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/mordedor-guante-colores-peru-yeyu.png",
-      "description": "Guante Mordedor de Colores."
+      "description": "✨ Guantes Mordedores de Colores ✋🏻\nAlivio y diversión al alcance de sus manitas 🤲💚\n\n👩🏻‍⚕️ Ayudan a calmar las molestias de la dentición 🦷\n✔️ Silicona libre de BPA\n✔️ Colores: verde, azul, rosado y más"
     },
     {
       "id": "prod-muneco-felpa-apego",
       "name": "Muñeco de Felpa de Apego",
-      "category": "Estimulación",
+      "category": ["Juguetes", "Estimulación"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/muñeco-felpa-apego-peru-yeyu.png",
-      "description": "Muñeco de Felpa de Apego."
+      "description": "🐰 Manta Peluche de Apego 🍼\nLa compañera ideal para tu bebé 💛\n\n✔️ Texturas suaves y sonidos estimulantes\n✔️ Mordedor de silicona para aliviar encías\n✔️ Ayuda a dormir al bebé\n✔️ Estimula la vista, el tacto y la etapa bucal\n📏 Medidas: 25 × 25 cm\n✨ ¡Un regalo perfecto para recién nacidos! 🎁"
     },
     {
       "id": "prod-muselina-pack5-happyflute",
       "name": "Pack 5 Muselinas 60*60 Happyflute",
-      "category": "Estimulación",
+      "category": ["Ropa", "Accesorios"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/muselina-6060-Pack5-Happyflute-peru-yeyu.png",
-      "description": "Pack 5 Muselinas 60*60 Happyflute."
+      "description": "🟣 Pack 5 Muselinas HappyFlute 60 × 60\n\nSuavidad que tu bebé merece 💕\n✔️ Perfectas para recién nacidos y niños pequeños\n✔️ Útiles en cualquier estación del año\n✔️ Sirven como manta, toalla o cobertor\n🔨 Material: 100 % algodón + fibra de bambú\n📏 Tamaño: 60 × 60 cm\n🎨 Modelos: varios\n👉 Descubre todos nuestros diseños"
     },
     {
       "id": "prod-muselina-algodon-happyflute",
       "name": "Muselinas para Bebes Happyflute",
-      "category": "Estimulación",
+      "category": ["Ropa", "Accesorios"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/muselina-algodon-happyflute-peru-yeyu.png",
-      "description": "Muselinas para Bebes Happyflute."
+      "description": "🌟 Muselinas HappyFlute\n\nTu aliada 4 en 1: manta, toalla y más. Fácil de usar y guardar en tu mochila o cartera ✨\n\n📏 Tamaño XL: 120 × 110 cm\n🌿 Material: 100 % algodón y fibra de bambú, doble capa\nSúper suaves; aptas para todas las estaciones.\nUso: envoltura, toalla, manta de juegos, funda de cochecito y más.\n\nMira nuestro catálogo completo con más de 35 modelos: https://bit.ly/yeyu-catalogo-muselinas"
     },
     {
       "id": "prod-panal-entrenamiento-happyflute",
       "name": "Pañales de Entrenamiento Happyflute",
-      "category": "Estimulación",
+      "category": ["Ropa", "Accesorios"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/pañal-entrenamiento-happyflute-peru-yeyu.png",
-      "description": "Pañales de Entrenamiento Happyflute."
+      "description": "🩲 Pantalones de Entrenamiento HappyFlute\n\n¡El paso perfecto hacia la independencia! 🌱\n\n✔️ Impermeables, transpirables y lavables\n✔️ Tela de algodón natural + patrones PUL\n📏 Tallas:\n• M: 8–10 kg\n• L: 10–12 kg\n• XL: 12–15 kg\n\n📦 Set de 2 unidades"
     },
     {
       "id": "prod-panal-ecologico-happyflute",
       "name": "Pañales Ecológicos Happyflute",
-      "category": "Estimulación",
+      "category": ["Ropa", "Accesorios"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/pañales-ecologicos-happyflute-peru-yeyu.png",
-      "description": "Pañales Ecológicos Happyflute."
+      "description": "Pañales Ecológicos HappyFlute 🐣\n\nCuida a tu bebé y al planeta 🌍\n\n✔️ Lavables, reutilizables y súper absorbentes\n✔️ Libres de BPA\n📏 Talla única ajustable (S-M-L)\n👶 Para bebés desde 3 kg hasta 15 kg\n🎨 Modelos: varios\n🔨 Material: nanofibra durable"
     },
     {
       "id": "prod-pantufla-felpa-bebe",
       "name": "Zapatos Pantuflas de Felpa para Bebes",
-      "category": "Estimulación",
+      "category": ["Ropa"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/pantuflas-basicas-bebe-peru-yeyu.png",
-      "description": "Zapatos Pantuflas de Felpa para Bebes."
+      "description": "👟 Zapatillas Pantuflas de Felpa Antideslizantes para Bebé\nCalidez y comodidad para los primeros pasos en casa ❄️🧸\n\n🧵 Material: algodón + poliéster, suaves y abrigadoras\n🎨 Colores: rosa, azul y marrón\n📐 Tallas:\n• M: plantilla 14 cm (pies de 12–13.5 cm) → 9 a 18 meses\n• L: plantilla 15 cm (pies de 14–15 cm) → 18 a 36 meses\n\n👶🏻 Ideales para: gatear, caminar en interiores y mantener los pies calentitos\n🦶 Suela antideslizante para mayor seguridad\n✨ Diseño tipo calcetín, fácil de poner y quitar"
     },
     {
       "id": "prod-sombrero-algodon-basico",
       "name": "Sombrero de Algodon Basico",
-      "category": "Estimulación",
+      "category": ["Verano", "Ropa", "Accesorios"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/sombrero-sol-algodon-bebe-peru-yeyu.png",
-      "description": "Sombrero de Algodon Basico."
+      "description": "👒 Sombreros para Bebé\nEstilo y protección bajo el sol ☀️🏖️\n\n🤍 Básicos esenciales\n🎨 Colores: azul, rosado, crema, blanco y más\n📏 Talla XS (46 cm): 3–12 meses"
     },
     {
       "id": "prod-sombrero-sol-diseno-c1",
       "name": "Sombrero de Sol con Diseños",
-      "category": "Estimulación",
+      "category": ["Verano", "Ropa", "Accesorios"],
       "tag": "TOP",
       "isSale": false,
       "image": "img/productos/sombrero-sol-diseños-bebe-peru-yeyu.png",
-      "description": "Sombrero de Sol con Diseños."
+      "description": "👒 Sombreros para Bebé\nEstilo y protección bajo el sol ☀️🏖️\n\n🎨 Diseños divertidos\n📏 Talla S (50 cm): 9–24 meses\n📏 Talla M (52 cm): 24–48 meses"
     }
   ]
+
 }

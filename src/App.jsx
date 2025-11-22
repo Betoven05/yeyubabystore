@@ -1,53 +1,37 @@
 import React, { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { About } from "./components/about";
-import { Footer } from "./components/footer";
-import { Catalog } from "./components/Catalog";
-import JsonData from "./data/data.json";
-import SmoothScroll from "smooth-scroll";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
-});
+import Navigation from "./components/navigation";
+import { Footer } from "./components/footer";
+import { Home } from "./pages/Home";
+import { Catalog } from "./components/Catalog";
+import { AboutPage } from "./pages/About";
+import { Product } from "./pages/Product";
+import JsonData from "./data/data.json";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
-  const [currentSection, setCurrentSection] = useState("inicio");
 
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
 
   return (
-    <div>
-      <Navigation
-        currentSection={currentSection}
-        onSectionChange={setCurrentSection}
-      />
+    <Router>
+      <ScrollToTop />  
+      
+      <Navigation />
 
-      {/* INICIO */}
-      {currentSection === "inicio" && (
-        <Header
-          data={landingPageData.Header}
-          onVerCatalogo={() => setCurrentSection("catalogo")}
-        />
-      )}
+      <Routes>
+        <Route path="/" element={<Home data={landingPageData} />} />
+        <Route path="/catalogo" element={<Catalog />} />
+        <Route path="/nosotros" element={<AboutPage data={landingPageData} />} />
+        <Route path="/producto/:id" element={<Product />} />
+      </Routes>
 
-      {/* CATALOGO */}
-      {currentSection === "catalogo" && (
-        <Catalog products={landingPageData.Products} />
-      )}
-
-      {/* NOSOTROS */}
-      {currentSection === "nosotros" && (
-        <About data={landingPageData.About} />
-      )}
-
-      {/* FOOTER siempre visible */}
       <Footer />
-    </div>
+    </Router>
   );
 };
 

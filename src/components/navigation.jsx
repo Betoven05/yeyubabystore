@@ -1,16 +1,7 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
-export const Navigation = ({ currentSection, onSectionChange }) => {
-  const handleClick = (e, section) => {
-    e.preventDefault();
-    if (onSectionChange) {
-      onSectionChange(section);
-    }
-  };
-
-  const isActive = (section) =>
-    currentSection === section ? "active" : "";
-
+const Navigation = () => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -28,40 +19,37 @@ export const Navigation = ({ currentSection, onSectionChange }) => {
           </button>
 
           {/* Marca / logo texto */}
-          <a
-            className="navbar-brand page-scroll"
-            href="/#inicio" 
-            onClick={(e) => handleClick(e, "inicio")}
-          >
+          <Link className="navbar-brand page-scroll" to="/">
             Yeyu Baby Store
-          </a>
+          </Link>
         </div>
 
         <div className="collapse navbar-collapse" id="navbar-main">
           <ul className="nav navbar-nav navbar-right">
-            <li className={isActive("inicio")}>
-              <a
-                href="/#inicio"
-                onClick={(e) => handleClick(e, "inicio")}
+            <li>
+              <NavLink
+                end
+                to="/"
+                className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Inicio
-              </a>
+              </NavLink>
             </li>
-            <li className={isActive("catalogo")}>
-              <a
-                href="/#catalogo"
-                onClick={(e) => handleClick(e, "catalogo")}
+            <li>
+              <NavLink
+                to="/catalogo"
+                className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Catálogo
-              </a>
+              </NavLink>
             </li>
-            <li className={isActive("nosotros")}>
-              <a
-                href="/#nosotros"
-                onClick={(e) => handleClick(e, "nosotros")}
+            <li>
+              <NavLink
+                to="/nosotros"
+                className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Nosotros
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -69,3 +57,5 @@ export const Navigation = ({ currentSection, onSectionChange }) => {
     </nav>
   );
 };
+
+export default Navigation;
