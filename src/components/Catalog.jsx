@@ -1,7 +1,8 @@
-// src/components/catalog.jsx
+// Catalog.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import JsonData from "../data/data.json";
+import { LazyImage } from "../components/LazyImage";
 
 export const Catalog = () => {
   const products = JsonData.Products || [];
@@ -23,7 +24,7 @@ export const Catalog = () => {
             >
               <div className="thumbnail yb-product-card">
                 {product.image && (
-                  <img
+                  <LazyImage
                     src={`/${product.image}`}
                     alt={`${product.name} - Yeyu Baby Store`}
                     className="img-responsive yb-product-image"

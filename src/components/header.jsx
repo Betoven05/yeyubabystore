@@ -1,5 +1,7 @@
+// src/components/header.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyImage } from "./LazyImage"; // ajusta la ruta según dónde lo tengas
 
 export const Header = (props) => {
   return (
@@ -23,22 +25,27 @@ export const Header = (props) => {
 
         {/* Slides */}
         <div className="carousel-inner" role="listbox">
+          {/* Slide visible al cargar: sin lazy */}
           <div className="item active">
             <img
               src="/img/banner/banner_01.png"
               className="yb-hero-img"
               alt="Productos para bebés - Yeyu Baby Store 1"
+              loading="eager"
+              decoding="async"
             />
           </div>
+
+          {/* Slides siguientes: lazy loading */}
           <div className="item">
-            <img
+            <LazyImage
               src="/img/banner/banner_02.png"
               className="yb-hero-img"
               alt="Productos para bebés - Yeyu Baby Store 2"
             />
           </div>
           <div className="item">
-            <img
+            <LazyImage
               src="/img/banner/banner_03.png"
               className="yb-hero-img"
               alt="Productos para bebés - Yeyu Baby Store 3"
@@ -72,32 +79,13 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 text-center">
-
-                {/* --- Ocultamos título y descripción del banner --- */}
-                {/*
-                <h1>
-                  {props.data ? props.data.title || "Yeyu Baby Store" : "Yeyu Baby Store"}
-                </h1>
-
-                <p>
-                  {props.data
-                    ? props.data.paragraph || "Juguetes, ropa y más para bebés."
-                    : "Juguetes, ropa y más para bebés."}
-                </p>
-                */}
-
-                {/* Botón visible */}
-                <Link
-                  to="/catalogo"
-                  className="btn btn-custom btn-lg"
-                >
+                <Link to="/catalogo" className="btn btn-custom btn-lg">
                   Ver catálogo
                 </Link>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </header>
   );

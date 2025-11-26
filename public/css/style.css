@@ -551,3 +551,19 @@ header .intro-text {
 #footer-info .footer-feature p {
   text-align: center !important;
 }
+/* Página Nosotros (ruta /nosotros) */
+.yb-page-about {
+  padding: 80px 0; /* top/bottom */
+}
+
+/* Más respiro lateral en móvil */
+@media (max-width: 767px) {
+  .yb-page-about {
+    padding: 70px 16px; /* top/bottom 70, laterales 16px */
+  }
+
+  /* Extra: que el texto no se vea tan ancho */
+  .yb-page-about p {
+    line-height: 1.6;
+  }
+}

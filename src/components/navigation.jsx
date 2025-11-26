@@ -2,6 +2,22 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Navigation = () => {
+  const handleNavItemClick = () => {
+    const navbarCollapse = document.getElementById("navbar-main");
+    const navbarToggle = document.querySelector(".navbar-toggle");
+
+    // Solo colapsar si estamos en móvil (el botón es visible)
+    if (
+      navbarCollapse &&
+      navbarCollapse.classList.contains("in") && // abierto
+      navbarToggle &&
+      window.getComputedStyle(navbarToggle).display !== "none"
+    ) {
+      navbarCollapse.classList.remove("in");
+      navbarToggle.classList.add("collapsed");
+    }
+  };
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -18,7 +34,6 @@ const Navigation = () => {
             <span className="icon-bar"></span>
           </button>
 
-          {/* Marca / logo texto */}
           <Link className="navbar-brand page-scroll" to="/">
             Yeyu Baby Store
           </Link>
@@ -31,6 +46,7 @@ const Navigation = () => {
                 end
                 to="/"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={handleNavItemClick}
               >
                 Inicio
               </NavLink>
@@ -39,6 +55,7 @@ const Navigation = () => {
               <NavLink
                 to="/catalogo"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={handleNavItemClick}
               >
                 Catálogo
               </NavLink>
@@ -47,6 +64,7 @@ const Navigation = () => {
               <NavLink
                 to="/nosotros"
                 className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={handleNavItemClick}
               >
                 Nosotros
               </NavLink>

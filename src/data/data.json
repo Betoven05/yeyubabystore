@@ -26,6 +26,15 @@
       "description": "👜 Bolso de Pañales Sunveno\n\nPráctico, resistente y siempre listo para ti 💕\n\n✔️ Plegable y portátil\n✔️ Impermeable y fácil de limpiar\n📏 Medidas: 21 × 17 × 7 cm\n🍼 Capacidad: hasta 10 pañales\n🔨 Material: Paño Oxford + Nylon de alta calidad"
     },
     {
+      "id": "prod-body-navideño-c2",
+      "name": "Body Navideño para Bebes",
+      "category": ["Ropa"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "image": "img/productos/body-navideño-bebe-c2-peru-yeyu.png",
+      "description": "🎄 Body Navideño Modelo 2 (Tejido)\n\nUn estilo más abrigadito y lleno de magia navideña ❄️🎅\n\nMaterial algodón + poliéster, tejido suave.\n📏 S: 44×29 cm (3–9m)\n📏 M: 47×30 cm (9–18m)\nAjuste superior con botones."
+    },
+    {
       "id": "prod-casco-seguridad-bebe",
       "name": "Casco de Seguridad para Bebes",
       "category": ["Ropa", "Accesorios"],
