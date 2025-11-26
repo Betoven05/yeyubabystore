@@ -8,7 +8,7 @@ export const Catalog = () => {
   const products = JsonData.Products || [];
 
   return (
-    <div id="catalogo" className="yb-catalog-section">
+    <div id="catalogo" className="yb-page yb-catalog-section">
       <div className="container">
         <h2>Catálogo</h2>
         <p className="yb-catalog-subtitle">

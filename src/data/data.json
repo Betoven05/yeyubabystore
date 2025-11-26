@@ -71,12 +71,21 @@
       "description": "🥕 Granja de Zanahorias Montessori\n\n✨ ¡Diversión y aprendizaje en un solo juego!\n\nIncluye 👉 9 zanahorias + base de granja 🍃\n📏 Medidas: Base 15.5 × 15.5 × 4 cm / Zanahorias 9.5 × 4 cm\n🔨 Material: felpa suave con relleno de algodón\n💡 Ideal para estimular la motricidad fina y el juego sensorial"
     },
     {
+      "id": "prod-laberinto-didactico-madera",
+      "name": "Laberinto Didactico de madera",
+      "category": ["Juguetes", "Estimulación"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "image": "img/productos/laberinto-didactivo-madera-peru-yeyu.png",
+      "description": "Laberinto Didactico de madera para bebes 👶🏻\n\n Edad recomendada: 12–36 meses"
+    },
+    {
       "id": "prod-libro-estimulacion-animales",
       "name": "Libros de estimulación para bebes",
       "category": ["Juguetes", "Estimulación"],
       "tag": "TOP",
       "isSale": false,
-      "image": "img/productos/libro_estimulacion_animales-peru-yeyu.png",
+      "image": "img/productos/libro-estimulacion-animales-peru-yeyu.png",
       "description": "📚 Libros de Estimulación con Texturas Montessori\nDescubre el mundo con tacto y color desde los primeros meses 🐯🦈\n\n📐 Tamaños: 13 × 13 cm o 15 × 18 cm\n🐾 Temas: granja, selva, marinos y mucho más\n👶🏻 Edad recomendada: 3–18 meses"
     },
     {
@@ -85,7 +94,7 @@
       "category": ["Ropa", "Estimulación"],
       "tag": "TOP",
       "isSale": false,
-      "image": "img/productos/zapamedia_animales-peru-yeyu.png",
+      "image": "img/productos/zapamedia-animales-peru-yeyu.png",
       "description": "🧸 Zapatitos media con diseño de animalitos 🐰🦊🐻\nSuaves, cómodos y con suela antideslizante para acompañar cada paso de tu bebé 💕\n\n📏 Tallas disponibles:\n• S: 0–6 meses (plantilla de 9 a 10 cm)\n• M: 6–18 meses (plantilla de 11 a 12 cm)\n• L: 12–24 meses (plantilla de 12.5 a 13.5 cm)\n\n🧶 Material: algodón + poliéster, flexibles y transpirables 🌿"
     },
     {
@@ -197,6 +206,15 @@
       "description": "👟 Zapatillas Pantuflas de Felpa Antideslizantes para Bebé\nCalidez y comodidad para los primeros pasos en casa ❄️🧸\n\n🧵 Material: algodón + poliéster, suaves y abrigadoras\n🎨 Colores: rosa, azul y marrón\n📐 Tallas:\n• M: plantilla 14 cm (pies de 12–13.5 cm) → 9 a 18 meses\n• L: plantilla 15 cm (pies de 14–15 cm) → 18 a 36 meses\n\n👶🏻 Ideales para: gatear, caminar en interiores y mantener los pies calentitos\n🦶 Suela antideslizante para mayor seguridad\n✨ Diseño tipo calcetín, fácil de poner y quitar"
     },
     {
+      "id": "prod-poleron-navideño-bebe",
+      "name": "Poleron Navideño para Bebes",
+      "category": ["Ropa"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "image": "img/productos/poleron-navideño-bebe-peru-yeyu.png",
+      "description": "🎄 Polerón Navideño Rojo\n\nEl complemento ideal para las noches frescas de diciembre ❤️🧣\n\nMaterial algodón + poliéster en tono rojo vibrante.\n📏 S: 42×30 cm (6–12m)\n📏 M: 44×30 cm (12–18m)"
+    },
+    {
       "id": "prod-sombrero-algodon-basico",
       "name": "Sombrero de Algodon Basico",
       "category": ["Verano", "Ropa", "Accesorios"],
@@ -213,6 +231,24 @@
       "isSale": false,
       "image": "img/productos/sombrero-sol-diseños-bebe-peru-yeyu.png",
       "description": "👒 Sombreros para Bebé\nEstilo y protección bajo el sol ☀️🏖️\n\n🎨 Diseños divertidos\n📏 Talla S (50 cm): 9–24 meses\n📏 Talla M (52 cm): 24–48 meses"
+    },
+    {
+      "id": "prod-sonajero-colgante-individual-c2",
+      "name": "Sonajero Colgante Individual de animales",
+      "category": ["Juguetes"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "image": "img/productos/sonajero-colgante-individual-c2-peru-yeyu.png",
+      "description": "🌟 Sonajero Colgante Individual de animales 🐣"
+    },
+    {
+      "id": "prod-vasos-apilables-colores",
+      "name": "Vasos Apilables de Colores",
+      "category": ["Juguetes", "Estimulación"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "image": "img/productos/vasos-apilables-colores-peru-yeyu.png",
+      "description": "Vasos Apilables de Colores 🎨"
     }
   ]
 

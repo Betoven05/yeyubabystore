@@ -1,7 +1,7 @@
 // src/components/header.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { LazyImage } from "./LazyImage"; // ajusta la ruta según dónde lo tengas
+import { LazyImage } from "./LazyImage";
 
 export const Header = (props) => {
   return (
