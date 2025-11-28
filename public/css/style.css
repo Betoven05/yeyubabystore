@@ -372,20 +372,59 @@ header .intro-text {
   }
 }
 
+@media (max-width: 768px) {
+  #footer {
+    padding: 15px 0;
+  }
+
+  #footer-info .footer-feature {
+    margin-bottom: 12px;
+  }
+
+  #footer-info .footer-feature h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  #footer-info .footer-feature p {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+}
+
 /* Redes sociales en el footer */
 .social ul {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 14px;          /* espacio entre íconos */
 }
 
 .social ul li {
-  display: inline-block;
-  margin: 0 8px;
+  list-style: none;
+}
+
+.social ul li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-decoration: none;
 }
 
 .social i.fa {
   font-size: 18px;
-  margin-right: 4px;
+  margin: 0;
+  color: #48B749;     /* Color de la marca */
+}
+
+.social ul li a:hover i.fa {
+  transform: translateY(-1px);
 }
 
 /* Responsive */
@@ -538,8 +577,8 @@ header .intro-text {
 
 @media (max-width: 768px) {
   #yb-hero-carousel {
-    height: 40vh;
-    min-height: 240px;
+    height: auto;
+    min-height: 0;
   }
 
   .yb-hero-overlay p {
@@ -591,7 +630,7 @@ header .intro-text {
 /* === Sección Más Vendidos === */
 .yb-top-sellers {
   padding: 35px 0 15px;
-  background: #fdfdfd;
+  background: #f0fbf7;
 }
 
 .yb-top-inner {
@@ -627,7 +666,8 @@ header .intro-text {
   border-radius: 12px;
   padding: 12px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-  height: 100%;
+  /*height: 100%; */
+  min-height: 230px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -642,6 +682,13 @@ header .intro-text {
   max-height: 200px;
   width: 100%;
   object-fit: cover;
+}
+
+/* Aumentar alto de imagen en pantallas grandes */
+@media (min-width: 990px) {
+  .yb-top-image {
+    max-height: 310px;
+  }
 }
 
 .yb-top-name {
@@ -714,4 +761,86 @@ header .intro-text {
 
 #yb-top-carousel .item > .row {
   margin-bottom: 0;
+}
+
+/* Ajustar la altura del carrusel de Más Vendidos al contenido */
+#yb-top-carousel {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#yb-top-carousel .carousel-inner {
+  height: auto !important;
+}
+
+#yb-top-carousel .carousel-inner > .item {
+  height: auto !important;
+  min-height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Aseguramos que la fila interna no cree espacio extra */
+#yb-top-carousel .carousel-inner > .item > .row.yb-top-slide {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+#yb-top-carousel,
+#yb-top-carousel .carousel-inner,
+#yb-top-carousel .carousel-inner > .item {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* Aseguramos que el contenido defina el alto, sin relleno extraño */
+#yb-top-carousel .carousel-inner > .item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* La fila interna tampoco debe meter margen extra grande */
+#yb-top-carousel .carousel-inner > .item > .row {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Por si el propio .carousel tiene margen inferior heredado */
+#yb-top-carousel {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .yb-top-image {
+    max-height: 160px;
+  }
+
+  .yb-top-name {
+    font-size: 14px;
+  }
+
+  .yb-top-card {
+    min-height: 220px;
+    padding: 8px;
+  }
+
+  .yb-top-category {
+    font-size: 12px;
+  }
+  
+  .yb-top-card .btn-custom {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  .yb-top-sellers .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .yb-top-col {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }

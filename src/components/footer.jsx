@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="container">
           <div className="row">
             {/* Envíos a todo el Perú */}
-            <div className="col-md-3 col-sm-6 footer-feature">
+            <div className="col-xs-6 col-sm-6 col-md-3 footer-feature">
               <img src="/img/icons/envios.png" alt="Envíos" className="yb-footer-icon" />
               <h4>Envíos a todo el Perú</h4>
               <p>
@@ -18,18 +18,17 @@ export const Footer = () => {
             </div>
 
             {/* Pago y entrega coordinada */}
-            <div className="col-md-3 col-sm-6 footer-feature">
+            <div className="col-xs-6 col-sm-6 col-md-3 footer-feature">
               <img src="/img/icons/pagos.png" alt="Pagos" className="yb-footer-icon" />
               <h4>Pago y entrega coordinada</h4>
               <p>
                 Realizamos <strong>entregas contraentrega coordinadas</strong> en puntos seguros de Lima
-                y envíos a provincia mediante empresas de mensajería. Coordinamos los detalles por WhatsApp
-                para tu mayor comodidad.
+                . Coordinamos los detalles por WhatsApp para tu mayor comodidad.
               </p>
             </div>
 
             {/* Nosotros */}
-            <div className="col-md-3 col-sm-6 footer-feature">
+            <div className="col-xs-6 col-sm-6 col-md-3 footer-feature">
               <img src="/img/icons/nosotros.png" alt="Nosotros" className="yb-footer-icon" />
               <h4>Nosotros</h4>
               <p>
@@ -40,7 +39,7 @@ export const Footer = () => {
             </div>
 
             {/* Datos de contacto */}
-            <div className="col-md-3 col-sm-6 footer-feature">
+            <div className="col-xs-6 col-sm-6 col-md-3 footer-feature">
               <img src="/img/icons/atencion.png" alt="Atención" className="yb-footer-icon" />
               <h4>Atención y contacto</h4>
               <p>
@@ -48,11 +47,11 @@ export const Footer = () => {
                 <br />
                 Lunes a sábado: 9:00 a.m. – 7:00 p.m.
               </p>
-              <p>
+              {/*<p>
                 <strong>Dirección:</strong>
                 <br />
                 Los Olivos – Lima – Perú
-              </p>
+              </p>*/}
               <p>
                 <strong>Teléfono / WhatsApp:</strong>
                 <br />
@@ -66,33 +65,33 @@ export const Footer = () => {
               <div className="social">
                 <ul>
                   <li>
-                    <i className="fa fa-instagram"></i>{" "}
                     <a
                       href="https://www.instagram.com/yeyubabystore"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label="Instagram Yeyu Baby Store"
                     >
-                      @yeyubabystore
+                      <i className="fa fa-instagram" />
                     </a>
                   </li>
                   <li>
-                    <i className="fa fa-facebook"></i>{" "}
                     <a
                       href="https://www.facebook.com/yeyubabystore"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label="Facebook Yeyu Baby Store"
                     >
-                      /yeyubabystore
+                      <i className="fa fa-facebook" />
                     </a>
                   </li>
                   <li>
-                    <i className="fa fa-whatsapp"></i>{" "}
                     <a
                       href="https://wa.me/51945307158"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label="WhatsApp Yeyu Baby Store"
                     >
-                      Yeyu Baby Store
+                      <i className="fa fa-whatsapp" />
                     </a>
                   </li>
                 </ul>

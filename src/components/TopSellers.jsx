@@ -61,7 +61,7 @@ export const TopSellers = () => {
                     {group.map((product) => (
                       <div
                         key={product.id}
-                        className="col-xs-12 col-sm-6 yb-top-col"
+                        className="col-xs-6 col-sm-6 yb-top-col"
                       >
                         <div className="yb-top-card">
                           <LazyImage

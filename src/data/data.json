@@ -125,6 +125,15 @@
       "description": "🎒 Mini Bolsa Pañalera HappyFlute\n\nCompacta, práctica y lista para acompañarte ✨\n📏 Medidas: 18 cm ancho × 25 cm alto\n🔨 Material: PUL impermeable (poliéster)\n🎨 Modelos: varios diseños disponibles"
     },
     {
+      "id": "prod-mini-bolsa-panales-happyflute-xl",
+      "name": "Bolsa de Pañales Happyflute XL",
+      "category": ["Accesorios"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "image": "img/productos/minibolsa-pañales-happyflute-xl-peru-yeyu.png",
+      "description": "🎒 Bolsa Pañalera HappyFlute XL\n\nCompacta, práctica y lista para acompañarte ✨\n📏 Medidas: 30 cm ancho × 40 cm alto\n🔨 Material: PUL impermeable (poliéster)\n🎨 Modelos: varios diseños disponibles"
+    },
+    {
       "id": "prod-mordedor-animales",
       "name": "Guante Mordedor de Animales",
       "category": ["Mordedores", "Estimulación", "Juguetes"],
@@ -213,6 +222,15 @@
       "isSale": false,
       "image": "img/productos/poleron-navideño-bebe-peru-yeyu.png",
       "description": "🎄 Polerón Navideño Rojo\n\nEl complemento ideal para las noches frescas de diciembre ❤️🧣\n\nMaterial algodón + poliéster en tono rojo vibrante.\n📏 S: 42×30 cm (6–12m)\n📏 M: 44×30 cm (12–18m)"
+    },
+    {
+      "id": "prod-rodillo-infable-estimulacion-bebe",
+      "name": "Rodillo Inflable de Estimulacion para Bebes",
+      "category": ["Juguetes", "Estimulación"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "image": "img/productos/rodillo_inflable_estimulacion-peru-yeyu.png",
+      "description": "Rodillo Inflable de Estimulacion para Bebes\n\n🐣 Contribuye en la estimulacion de los bebes\n✔️ Ayuda en el aprendizaje de gateo\n👶🏻 Edad recomendada desde los 3 meses\n📏 Medidas: 22cm * 48cm\n🏋️‍♂️ Soporta hasta los 25kg"
     },
     {
       "id": "prod-sombrero-algodon-basico",
