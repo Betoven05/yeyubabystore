@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  padding-top: 90px;
+  padding-top: 40px;
 }
 
 header {
@@ -21,7 +21,7 @@ header {
 
 @media (max-width: 768px) {
   body {
-    padding-top: 60px;
+    padding-top: 30px;
   }
 }
 
@@ -95,7 +95,7 @@ hr {
 
 /* Navigation */
 #menu {
-  padding: 11px;
+  padding: 8px;
   transition: all 0.8s;
 }
 
@@ -103,11 +103,14 @@ hr {
   background-color: #fff;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  min-height: 48px;
 }
 
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: 20px !important;
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
@@ -442,31 +445,153 @@ header .intro-text {
 
 .yb-catalog-section h2 {
   text-align: center;
+  margin-top: 0;
+}
+
+.yb-catalog-filters-panel {
+  margin-top: 10px;
 }
 
 .yb-catalog-subtitle {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 10px; 
   text-align: center;
   font-size: 15px;
   color: #666;
 }
 
-/* columnas de producto */
-.yb-product-column {
-  margin-bottom: 30px;
+.yb-catalog-filters {
+  background-color: #fdf3f7; /* tono suave */
+  border-radius: 10px;
+  padding: 14px 16px;        /* más alto */
+  min-height: 56px;          /* sensación de barra más alta */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  align-items: stretch;
 }
 
-/* card de producto */
-.yb-product-card {
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #eee;
-  min-height: 280px;
+.yb-catalog-filter-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;     /* un poquito más alto */
+  font-size: 15px;       /* como tú lo pusiste */
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: background 0.15s ease, box-shadow 0.15s ease,
+    transform 0.15s ease;
+  flex: 1 1 0;           /* que se estiren y ocupen todo el ancho */
+  text-align: center;
+}
+
+.yb-catalog-filter-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.yb-catalog-filter-btn.is-active {
+  background: #f7a8c3;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Toggle móvil tipo "3 rayas" para filtros */
+.yb-catalog-filters-toggle {
+  display: none; /* oculto por defecto, solo móvil lo muestra */
+  margin-top: 12px;
+}
+
+.yb-catalog-filters-toggle-btn {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid #ddd;
   background: #fff;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.yb-catalog-filters-toggle-icon {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.yb-catalog-filters-toggle-icon span {
+  width: 18px;
+  height: 2px;
+  background: #555;
+  margin: 2px 0;
+  border-radius: 4px;
+}
+
+.yb-catalog-filters-toggle-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.yb-catalog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* Desktop / tablet: barra de filtros siempre visible, toggle oculto */
+@media (min-width: 769px) {
+  .yb-catalog-filters-toggle {
+    display: none;
+  }
+
+  .yb-catalog-filters-panel {
+    display: block;
+  }
+}
+
+/* Móvil: se muestra el botón de 3 rayas, el panel se despliega sólo al hacer click */
+@media (max-width: 768px) {
+  .yb-catalog-filters-toggle {
+    display: block;
+  }
+
+  .yb-catalog-filters-panel {
+    display: none;
+    margin-top: 8px;
+  }
+
+  .yb-catalog-filters-panel.is-open {
+    display: block;
+  }
+
+  .yb-catalog-filters {
+    padding: 10px 12px;
+    gap: 6px;
+  }
+
+  .yb-catalog-filter-btn {
+    font-size: 14px;
+    padding: 6px 10px;
+    flex: 1 1 45%;
+  }
+}
+
+.yb-product-column {
+  float: none;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.yb-product-card {
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  width: 100%;
 }
 
 .yb-product-card:hover {
@@ -477,27 +602,102 @@ header .intro-text {
 /* imagen de producto */
 .yb-product-image {
   width: 100%;
-  height: 220px;
+  height: 180px;
   object-fit: cover; 
 }
 
-/* textos */
+/* En pantallas grandes todavía más compacto si quieres */
+@media (min-width: 992px) {
+  .yb-product-image {
+    height: 170px;
+  }
+}
+
 .yb-product-name {
-  font-size: 16px;
+  font-size: 14px;   
   margin-top: 10px;
+  margin-bottom: 4px;
+  min-height: 36px; 
 }
 
 .yb-product-category {
-  font-size: 13px;
+  font-size: 12px;
   color: #777;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  min-height: 30px;
 }
 
-/* que la caption no quede pegada */
 .yb-product-card .caption {
-  padding: 12px 15px 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
+.yb-product-card .btn-custom {
+  padding: 6px 16px;
+  font-size: 12px;
+}
+
+.yb-product-card .caption .btn-custom {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .yb-product-card .btn-custom {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+
+  .yb-product-name {
+    font-size: 13px;
+  }
+
+  .yb-product-category {
+    font-size: 11px;
+  }
+
+  .yb-product-column {
+    margin-bottom: 14px;
+  }
+
+  .yb-catalog-grid {
+    margin-top: 18px;
+  }
+}
+
+.yb-product-main-image {
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.yb-product-thumbnails {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.yb-product-thumb-btn {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.yb-product-thumb-btn.is-active {
+  box-shadow: 0 0 0 2px #f7a8c3;
+  transform: translateY(-1px);
+}
+
+.yb-product-thumb-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
 
 #yb-hero-carousel {
   position: relative;
@@ -842,5 +1042,26 @@ header .intro-text {
   .yb-top-col {
     padding-left: 5px;
     padding-right: 5px;
+  }
+}
+
+.yb-page-product-inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .yb-page-product-inner {
+    padding-top: 55px !important;
+  }
+  
+  .yb-page-product .container.yb-page-product-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 90px;
+  }
+
+  .yb-product-main-image {
+    max-height: 320px;
   }
 }

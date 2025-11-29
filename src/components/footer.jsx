@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <div>
       {/* Sección principal de información */}
-      <div id="footer-info">
+      <div id="footer-info" style={{ marginTop: "40px" }}>
         <div className="container">
           <div className="row">
             {/* Envíos a todo el Perú */}
