@@ -87,9 +87,9 @@ export const Product = () => {
           </div>
 
           <div className="col-md-7">
-            <h2 style={{ marginTop: 0 }}>{product.name}</h2>
+            <h2 style={{ marginTop: 5 }}>{product.name}</h2>
 
-            <p style={{ color: "#777", fontSize: 14 }}>
+            <p style={{ color: "#777", fontSize: 13 }}>
               <strong>Categoría:</strong>{" "}
               {Array.isArray(product.category)
                 ? product.category.join(" · ")

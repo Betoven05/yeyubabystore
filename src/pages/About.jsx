@@ -18,7 +18,7 @@ export const AboutPage = ({ data }) => {
         <p>{paragraph}</p>
 
         <LazyImage
-          src="/img/yeyubabystore_web_03.png"
+          src="/img/nosotros/yeyubabystore_web_03.png"
           alt="Yeyu Baby Store"
           className="img-responsive"
           style={{ marginTop: 30 }}

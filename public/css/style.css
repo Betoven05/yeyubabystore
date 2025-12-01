@@ -175,16 +175,15 @@ hr {
 }
 
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #48B749;
+  background-color: #ee9fc5;
 }
 
-/* Botón personalizado */
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #53da56;
-  background-image: linear-gradient(to right, #53da56 0%, #3ea840 100%);
+  color: #ffffff;
+  background-color: #ee9fc5;
+  background-image: linear-gradient(to right, #ee9fc5 0%, #f990ca 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -202,7 +201,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #3ea840;
+  background-color: #f1a0cd;
 }
 
 .btn:active,
@@ -224,7 +223,6 @@ a:focus,
   outline-offset: none;
 }
 
-/* Intro (portada inicio) */
 .intro {
   display: table;
   width: 100%;
@@ -282,7 +280,6 @@ header .intro-text {
   }
 }
 
-/* Sección Nosotros */
 #nosotros {
   padding: 100px 0;
 }
@@ -337,7 +334,6 @@ header .intro-text {
   margin: 30px 0;
 }
 
-/* Footer Section */
 #footer {
   background: #f6f6f6;
   padding: 20px 0;
@@ -395,13 +391,12 @@ header .intro-text {
   }
 }
 
-/* Redes sociales en el footer */
 .social ul {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 14px;          /* espacio entre íconos */
+  gap: 14px;      
 }
 
 .social ul li {
@@ -423,21 +418,19 @@ header .intro-text {
 .social i.fa {
   font-size: 18px;
   margin: 0;
-  color: #48B749;     /* Color de la marca */
+  color: #48B749;   
 }
 
 .social ul li a:hover i.fa {
   transform: translateY(-1px);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   #nosotros img {
     margin: 50px 0;
     width: 100%;
   }
 }
-/* === Catálogo Yeyu === */
 
 .yb-catalog-section {
   padding: 50px 0 60px; 
@@ -461,10 +454,10 @@ header .intro-text {
 }
 
 .yb-catalog-filters {
-  background-color: #fdf3f7; /* tono suave */
+  background-color: #fdf3f7;
   border-radius: 10px;
-  padding: 14px 16px;        /* más alto */
-  min-height: 56px;          /* sensación de barra más alta */
+  padding: 14px 16px;      
+  min-height: 56px;        
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -475,14 +468,14 @@ header .intro-text {
 .yb-catalog-filter-btn {
   border: none;
   border-radius: 999px;
-  padding: 8px 14px;     /* un poquito más alto */
-  font-size: 15px;       /* como tú lo pusiste */
+  padding: 8px 14px;    
+  font-size: 15px;      
   background: #ffffff;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: background 0.15s ease, box-shadow 0.15s ease,
     transform 0.15s ease;
-  flex: 1 1 0;           /* que se estiren y ocupen todo el ancho */
+  flex: 1 1 0;         
   text-align: center;
 }
 
@@ -497,9 +490,8 @@ header .intro-text {
   font-weight: 600;
 }
 
-/* Toggle móvil tipo "3 rayas" para filtros */
 .yb-catalog-filters-toggle {
-  display: none; /* oculto por defecto, solo móvil lo muestra */
+  display: none; 
   margin-top: 12px;
 }
 
@@ -542,7 +534,6 @@ header .intro-text {
   margin-right: -15px;
 }
 
-/* Desktop / tablet: barra de filtros siempre visible, toggle oculto */
 @media (min-width: 769px) {
   .yb-catalog-filters-toggle {
     display: none;
@@ -553,7 +544,6 @@ header .intro-text {
   }
 }
 
-/* Móvil: se muestra el botón de 3 rayas, el panel se despliega sólo al hacer click */
 @media (max-width: 768px) {
   .yb-catalog-filters-toggle {
     display: block;
@@ -599,14 +589,12 @@ header .intro-text {
   transform: translateY(-3px);
 }
 
-/* imagen de producto */
 .yb-product-image {
   width: 100%;
   height: 180px;
   object-fit: cover; 
 }
 
-/* En pantallas grandes todavía más compacto si quieres */
 @media (min-width: 992px) {
   .yb-product-image {
     height: 170px;
@@ -711,8 +699,6 @@ header .intro-text {
   display: block;
 }
 
-
-/* Texto sobre el banner */
 .yb-hero-overlay {
   position: absolute;
   top: 0;
@@ -727,7 +713,6 @@ header .intro-text {
   z-index: 1;
 }
 
-/* Controles del carrusel por encima del overlay */
 #yb-hero-carousel .carousel-control,
 #yb-hero-carousel .carousel-indicators {
   z-index: 2;
@@ -740,7 +725,6 @@ header .intro-text {
   }
 }
 
-/* Flechas del carrusel usando Font Awesome */
 #yb-hero-carousel .carousel-control {
   background-image: none; 
   width: 8%;       
@@ -761,7 +745,6 @@ header .intro-text {
 #yb-hero-carousel .right.carousel-control i.fa {
   right: 15px;
 }
-
 
 .yb-hero-overlay h1 {
   font-family: "Raleway", sans-serif;
@@ -786,7 +769,6 @@ header .intro-text {
   }
 }
 
-/* Centrado de bloques del footer */
 #footer-info .footer-feature {
   text-align: center !important;
 }
@@ -795,7 +777,7 @@ header .intro-text {
 #footer-info .footer-feature p {
   text-align: center !important;
 }
-/* Página Nosotros (ruta /nosotros) */
+
 .yb-page-about {
   padding: 50px 0 70px;
 }
@@ -809,7 +791,6 @@ header .intro-text {
     line-height: 1.6;
   }
 } 
-/* === Transición general de página (fade-in) === */
 
 @keyframes yb-fade-in-page {
   from {
@@ -822,12 +803,10 @@ header .intro-text {
   }
 }
 
-/* Clase genérica para páginas de React Router */
 .yb-page {
   animation: yb-fade-in-page 0.35s ease-out;
 }
 
-/* === Sección Más Vendidos === */
 .yb-top-sellers {
   padding: 35px 0 15px;
   background: #f0fbf7;
@@ -856,7 +835,6 @@ header .intro-text {
   color: #666;
 }
 
-/* Card de cada producto dentro del carrusel */
 .yb-top-col {
   margin-bottom: 20px;
 }
@@ -866,7 +844,6 @@ header .intro-text {
   border-radius: 12px;
   padding: 12px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-  /*height: 100%; */
   min-height: 230px;
   display: flex;
   flex-direction: column;
@@ -884,7 +861,6 @@ header .intro-text {
   object-fit: cover;
 }
 
-/* Aumentar alto de imagen en pantallas grandes */
 @media (min-width: 990px) {
   .yb-top-image {
     max-height: 310px;
@@ -915,7 +891,6 @@ header .intro-text {
   font-size: 13px;
 }
 
-/* CTA debajo del carrusel */
 .yb-top-cta {
   margin-top: 18px;
   text-align: center;
@@ -925,7 +900,6 @@ header .intro-text {
   margin-bottom: 10px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .yb-top-sellers {
     padding: 40px 16px 60px;
@@ -963,7 +937,6 @@ header .intro-text {
   margin-bottom: 0;
 }
 
-/* Ajustar la altura del carrusel de Más Vendidos al contenido */
 #yb-top-carousel {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -980,7 +953,6 @@ header .intro-text {
   padding-bottom: 0 !important;
 }
 
-/* Aseguramos que la fila interna no cree espacio extra */
 #yb-top-carousel .carousel-inner > .item > .row.yb-top-slide {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -994,19 +966,16 @@ header .intro-text {
   min-height: 0 !important;
 }
 
-/* Aseguramos que el contenido defina el alto, sin relleno extraño */
 #yb-top-carousel .carousel-inner > .item {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* La fila interna tampoco debe meter margen extra grande */
 #yb-top-carousel .carousel-inner > .item > .row {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* Por si el propio .carousel tiene margen inferior heredado */
 #yb-top-carousel {
   margin-bottom: 0;
   padding-bottom: 0;

@@ -5,9 +5,11 @@ import JsonData from "../data/data.json";
 import { LazyImage } from "./LazyImage";
 
 const TOP_PRODUCT_IDS = ["prod-aquashoes-bebe-c1", 
-    "prod-clip-sujetador-chupon", 
-    "prod-media-sonajero-munecas",
-    "prod-muselina-algodon-happyflute"];
+                        "prod-clip-sujetador-chupon", 
+                        "prod-libro-estimulacion-animales",
+                        "prod-muselina-algodon-happyflute",
+                        "prod-medias-sonajero-munecas",
+                        "prod-muneco-felpa-apego"];
 
 export const TopSellers = () => {
   const products = JsonData.Products || [];
@@ -17,7 +19,6 @@ export const TopSellers = () => {
     return null;
   }
 
-  // Agrupar de 2 en 2
   const groups = [];
   for (let i = 0; i < topProducts.length; i += 2) {
     groups.push(topProducts.slice(i, i + 2));
@@ -38,7 +39,6 @@ export const TopSellers = () => {
             className="carousel slide"
             data-ride="carousel"
           >
-            {/* Indicadores: uno por grupo (slide) */}
             <ol className="carousel-indicators">
               {groups.map((_, index) => (
                 <li
@@ -50,7 +50,6 @@ export const TopSellers = () => {
               ))}
             </ol>
 
-            {/* Slides */}
             <div className="carousel-inner" role="listbox">
               {groups.map((group, index) => (
                 <div
@@ -93,7 +92,6 @@ export const TopSellers = () => {
               ))}
             </div>
 
-            {/* Controles */}
             <a
               className="left carousel-control"
               href="#yb-top-carousel"
