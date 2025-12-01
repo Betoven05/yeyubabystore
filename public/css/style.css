@@ -1034,3 +1034,90 @@ header .intro-text {
     max-height: 320px;
   }
 }
+
+.yb-instagram-section {
+  padding: 30px 0 40px;
+  background: #fff8f2; 
+  border-top: 1px solid #f4e1d3;
+}
+
+.yb-instagram-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: none; 
+}
+
+.yb-instagram-subtitle {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 25px;
+  font-size: 14px;
+  color: #666;
+}
+
+.yb-instagram-grid {
+  margin-top: 10px;
+}
+
+.yb-instagram-item {
+  margin-bottom: 15px;
+}
+
+.yb-instagram-link {
+  display: block;
+  position: relative;
+}
+
+.yb-instagram-image-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.yb-instagram-image {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+}
+
+.yb-instagram-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.28);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.yb-instagram-overlay i.fa-instagram {
+  font-size: 28px;
+  color: #fff;
+}
+
+.yb-instagram-link:hover .yb-instagram-overlay {
+  opacity: 1;
+}
+
+.yb-instagram-cta {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.yb-instagram-cta .btn-custom {
+  padding: 8px 22px;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .yb-instagram-image {
+    height: 125px;
+  }
+
+  .yb-instagram-subtitle {
+    font-size: 13px;
+  }
+}
