@@ -1,21 +1,35 @@
 // src/pages/Product.jsx
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import JsonData from "../data/data.json";
 import { LazyImage } from "../components/LazyImage";
+
+const baseUrl = "https://yeyubabystore.com";
 
 export const Product = () => {
   const { id } = useParams();
   const product = JsonData.Products.find((p) => p.id === id);
 
-  // Hooks SIEMPRE antes de cualquier return condicional
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   if (!product) {
     return (
       <div className="yb-page">
+        <Helmet>
+          <title>Producto no encontrado | Yeyu Baby Store</title>
+          <meta
+            name="description"
+            content="El producto que buscas no cuenta con stock o ha sido retirado del catálogo de Yeyu Baby Store."
+          />
+          <link
+            rel="canonical"
+            href={`${baseUrl}/catalogo`}
+          />
+        </Helmet>
+
         <div className="container" style={{ padding: "120px 0 60px" }}>
-          <h2>Producto no encontrado</h2>
+          <h1>Producto no encontrado</h1>
           <p>
             El producto que buscas no existe o ha sido retirado del catálogo.
           </p>
@@ -30,7 +44,6 @@ export const Product = () => {
   const whatsappNumber = "51945307158";
   const message = `Hola, quiero más información sobre el producto: ${product.name}`;
 
-  // Si el producto tiene 'images', las usamos. Si no, usamos solo 'image'.
   const images =
     Array.isArray(product.images) && product.images.length > 0
       ? product.images
@@ -38,9 +51,71 @@ export const Product = () => {
       ? [product.image]
       : [];
 
+  const productUrl = `${baseUrl}/producto/${product.id}`;
+  const productImagesAbsolute = images.map((img) => `${baseUrl}/${img}`);
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Inicio",
+        item: `${baseUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Catálogo",
+        item: `${baseUrl}/catalogo`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: product.name,
+        item: productUrl,
+      },
+    ],
+  };
+
+  const productLd = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name: product.name,
+    image: productImagesAbsolute,
+    description: product.description,
+    brand: {
+      "@type": "Brand",
+      name: "Yeyu Baby Store",
+    },
+    category: Array.isArray(product.category)
+      ? product.category.join(" > ")
+      : product.category,
+    url: productUrl,
+  };
+
+  const metaDescription =
+    (product.description && product.description.slice(0, 155)) ||
+    `Detalle del producto ${product.name} en Yeyu Baby Store.`;
+
   return (
     <div className="yb-page yb-page-product">
+      <Helmet>
+        <title>{product.name} | Yeyu Baby Store</title>
+        <meta name="description" content={metaDescription} />
+        <link rel="canonical" href={productUrl} />
+
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbLd)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(productLd)}
+        </script>
+      </Helmet>
+
       <div className="container yb-page-product-inner">
+        {/* Breadcrumb visual para el usuario */}
         <p style={{ marginBottom: 10, fontSize: 13 }}>
           <Link to="/">Inicio</Link> &gt;{" "}
           <Link to="/catalogo">Catálogo</Link> &gt; <span>{product.name}</span>
@@ -87,7 +162,7 @@ export const Product = () => {
           </div>
 
           <div className="col-md-7">
-            <h2 style={{ marginTop: 5 }}>{product.name}</h2>
+            <h1 style={{ marginTop: 5 }}>{product.name}</h1>
 
             <p style={{ color: "#777", fontSize: 13 }}>
               <strong>Categoría:</strong>{" "}

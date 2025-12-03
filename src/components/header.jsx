@@ -1,4 +1,4 @@
-// src/components/header.jsx
+// src/components/Header.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import { LazyImage } from "./LazyImage";
@@ -79,6 +79,9 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 text-center">
+                <h1 className="sr-only">
+                  Productos para bebés en Perú
+                </h1>
                 <Link to="/catalogo" className="btn btn-custom btn-lg">
                   Ver catálogo
                 </Link>

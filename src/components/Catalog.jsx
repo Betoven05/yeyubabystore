@@ -1,11 +1,11 @@
 // src/components/Catalog.jsx
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import JsonData from "../data/data.json";
 import { LazyImage } from "../components/LazyImage";
 
 export const Catalog = () => {
-  // Solo productos activos (si no tiene isActive, se asume true)
   const allProducts = (JsonData.Products || []).filter(
     (p) => p.isActive !== false
   );
@@ -27,7 +27,6 @@ export const Catalog = () => {
 
   const handleSelectCategory = (cat) => {
     setSelectedCategory(cat);
-    // En móvil, al elegir una categoría ocultamos el panel
     setShowFiltersMobile(false);
   };
 
@@ -44,10 +43,19 @@ export const Catalog = () => {
     <div
       id="catalogo"
       className="yb-page yb-catalog-section"
-      style={{ paddingTop: "60px" }} // menos espacio arriba
+      style={{ paddingTop: "60px" }}
     >
+      <Helmet>
+        <title>Catálogo | Yeyu Baby Store</title>
+        <meta
+          name="description"
+          content="Explora el catálogo de Yeyu Baby Store: juguetes didácticos, ropa y accesorios para bebé con envíos a todo el Perú."
+        />
+        <link rel="canonical" href="https://yeyubabystore.com/catalogo" />
+      </Helmet>
+
       <div className="container">
-        <h2>Catálogo</h2>
+        <h1>Catálogo</h1>
         <p className="yb-catalog-subtitle">
           Descubre algunos de nuestros productos para tu bebé. Escríbenos por
           WhatsApp para conocer precios, colores y disponibilidad.
