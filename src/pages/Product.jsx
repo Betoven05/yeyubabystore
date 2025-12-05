@@ -22,9 +22,31 @@ export const Product = () => {
             name="description"
             content="El producto que buscas no cuenta con stock o ha sido retirado del catálogo de Yeyu Baby Store."
           />
-          <link
-            rel="canonical"
-            href={`${baseUrl}/catalogo`}
+          <link rel="canonical" href={`${baseUrl}/catalogo`} />
+
+          {/* Open Graph genérico */}
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Producto no encontrado | Yeyu Baby Store" />
+          <meta
+            property="og:description"
+            content="El producto que buscas no cuenta con stock o ha sido retirado del catálogo de Yeyu Baby Store."
+          />
+          <meta property="og:url" content={`${baseUrl}/catalogo`} />
+          <meta
+            property="og:image"
+            content={`${baseUrl}/img/yeyubabystore_web_01.png`}
+          />
+
+          {/* Twitter Cards genérico */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Producto no encontrado | Yeyu Baby Store" />
+          <meta
+            name="twitter:description"
+            content="El producto que buscas no cuenta con stock o ha sido retirado del catálogo de Yeyu Baby Store."
+          />
+          <meta
+            name="twitter:image"
+            content={`${baseUrl}/img/yeyubabystore_web_01.png`}
           />
         </Helmet>
 
@@ -102,13 +124,37 @@ export const Product = () => {
   return (
     <div className="yb-page yb-page-product">
       <Helmet>
+        {/* SEO básico */}
         <title>{product.name} | Yeyu Baby Store</title>
         <meta name="description" content={metaDescription} />
         <link rel="canonical" href={productUrl} />
 
+        {/* Open Graph para producto */}
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={`${product.name} | Yeyu Baby Store`} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:url" content={productUrl} />
+        {productImagesAbsolute[0] && (
+          <meta property="og:image" content={productImagesAbsolute[0]} />
+        )}
+
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content={`${product.name} | Yeyu Baby Store`}
+        />
+        <meta name="twitter:description" content={metaDescription} />
+        {productImagesAbsolute[0] && (
+          <meta name="twitter:image" content={productImagesAbsolute[0]} />
+        )}
+
+        {/* Breadcrumb JSON-LD */}
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbLd)}
         </script>
+
+        {/* Product JSON-LD */}
         <script type="application/ld+json">
           {JSON.stringify(productLd)}
         </script>

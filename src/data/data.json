@@ -208,8 +208,22 @@
       "description": "🧸 Zapatitos media con diseño de animalitos 🐰🦊🐻\nSuaves, cómodos y con suela antideslizante para acompañar cada paso de tu bebé 💕\n\n📏 Tallas disponibles:\n• S: 0–6 meses (plantilla de 9 a 10 cm)\n• M: 6–18 meses (plantilla de 11 a 12 cm)\n• L: 12–24 meses (plantilla de 12.5 a 13.5 cm)\n\n🧶 Material: algodón + poliéster, flexibles y transpirables 🌿"
     },
     {
+      "id": "prod-medias-delgadas-navidenas-c1",
+      "name": "Medias Delgadas Navideñas Modelo 1",
+      "category": ["Ropa"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "isActive": true,
+      "image": "img/productos/catalog/medias-delgadas-navideñas-c1-peru-yeyu.jpg",
+      "images": [
+        "img/productos/detalle/medias-delgadas-navideñas-c1-peru-yeyu-detalle01.jpg",
+        "img/productos/detalle/medias-delgadas-navideñas-c1-peru-yeyu-detalle02.jpg"
+      ],
+      "description": "Medias delgadas con diseños Navideños 🧦 \n\n🤩 Material: Algodón \n📏 Medidas: 10 cm en la base de la planta"
+    },
+    {
       "id": "prod-medias-delgadas-navidenas-c2",
-      "name": "Medias Delgadas Navideñas",
+      "name": "Medias Delgadas Navideñas Modelo 2",
       "category": ["Ropa"],
       "tag": "NUEVO",
       "isSale": false,

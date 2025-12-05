@@ -28,7 +28,7 @@ export const Header = (props) => {
           {/* Slide visible al cargar: sin lazy */}
           <div className="item active">
             <img
-              src="/img/banner/banner_01.png"
+              src="/img/banner/banner_01.jpg"
               className="yb-hero-img"
               alt="Productos para bebés - Yeyu Baby Store 1"
               loading="eager"
@@ -39,14 +39,14 @@ export const Header = (props) => {
           {/* Slides siguientes: lazy loading */}
           <div className="item">
             <LazyImage
-              src="/img/banner/banner_02.png"
+              src="/img/banner/banner_02.jpg"
               className="yb-hero-img"
               alt="Productos para bebés - Yeyu Baby Store 2"
             />
           </div>
           <div className="item">
             <LazyImage
-              src="/img/banner/banner_03.png"
+              src="/img/banner/banner_03.jpg"
               className="yb-hero-img"
               alt="Productos para bebés - Yeyu Baby Store 3"
             />

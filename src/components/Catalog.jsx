@@ -12,6 +12,17 @@ export const Catalog = () => {
 
   const [selectedCategory, setSelectedCategory] = useState("TODOS");
   const [showFiltersMobile, setShowFiltersMobile] = useState(false);
+  const [searchText, setSearchText] = useState("");
+
+  const handleSearchChange = (e) => {
+  const value = e.target.value;
+
+  const sanitized = value
+    .normalize("NFD") 
+    .replace(/[^0-9a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]/g, ""); 
+
+  setSearchText(sanitized);
+  };
 
   const categories = useMemo(() => {
     const set = new Set();
@@ -30,14 +41,20 @@ export const Catalog = () => {
     setShowFiltersMobile(false);
   };
 
-  const filteredProducts =
-    selectedCategory === "TODOS"
-      ? allProducts
-      : allProducts.filter((p) =>
-          Array.isArray(p.category)
-            ? p.category.includes(selectedCategory)
-            : p.category === selectedCategory
-        );
+  // 🔍 Filtro combinado: categoría + nombre
+  const filteredProducts = allProducts.filter((p) => {
+    const matchesCategory =
+      selectedCategory === "TODOS" ||
+      (Array.isArray(p.category)
+        ? p.category.includes(selectedCategory)
+        : p.category === selectedCategory);
+
+    const matchesName = p.name
+      .toLowerCase()
+      .includes(searchText.toLowerCase());
+
+    return matchesCategory && matchesName;
+  });
 
   return (
     <div
@@ -52,6 +69,32 @@ export const Catalog = () => {
           content="Explora el catálogo de Yeyu Baby Store: juguetes didácticos, ropa y accesorios para bebé con envíos a todo el Perú."
         />
         <link rel="canonical" href="https://yeyubabystore.com/catalogo" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Catálogo | Yeyu Baby Store" />
+        <meta
+          property="og:description"
+          content="Explora el catálogo de Yeyu Baby Store: juguetes didácticos, ropa y accesorios para bebé con envíos a todo el Perú."
+        />
+        <meta
+          property="og:url"
+          content="https://yeyubabystore.com/catalogo"
+        />
+        <meta
+          property="og:image"
+          content="https://yeyubabystore.com/img/yeyubabystore_web_01.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Catálogo | Yeyu Baby Store" />
+        <meta
+          name="twitter:description"
+          content="Explora el catálogo de Yeyu Baby Store: juguetes didácticos, ropa y accesorios para bebé con envíos a todo el Perú."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yeyubabystore.com/img/yeyubabystore_web_01.png"
+        />
       </Helmet>
 
       <div className="container">
@@ -60,6 +103,24 @@ export const Catalog = () => {
           Descubre algunos de nuestros productos para tu bebé. Escríbenos por
           WhatsApp para conocer precios, colores y disponibilidad.
         </p>
+
+        {/* 🔍 Buscador por nombre */}
+        <div style={{ marginBottom: 20 }}>
+          <input
+            type="text"
+            className="yb-search-input"
+            placeholder="Buscar por nombre..."
+            value={searchText}
+            onChange={handleSearchChange}
+            style={{
+              width: "100%",
+              maxWidth: 350,
+              padding: "8px 12px",
+              borderRadius: 6,
+              border: "1px solid #ddd",
+            }}
+          />
+        </div>
 
         {/* Toggle móvil tipo "3 rayas" */}
         <div className="yb-catalog-filters-toggle">
@@ -158,8 +219,8 @@ export const Catalog = () => {
           {filteredProducts.length === 0 && (
             <div className="col-md-12">
               <p>
-                No encontramos productos en esta categoría por ahora 🐣. Prueba
-                con otra opción o vuelve a "Todos".
+                No encontramos productos que coincidan con tu búsqueda 🐣. Prueba
+                con otro nombre o vuelve a &quot;Todos&quot;.
               </p>
             </div>
           )}
