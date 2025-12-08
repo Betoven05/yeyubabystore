@@ -5,6 +5,16 @@ import { Helmet } from "react-helmet-async";
 import JsonData from "../data/data.json";
 import { LazyImage } from "../components/LazyImage";
 
+const normalizeText = (text) => {
+  if (!text) return "";
+  return text
+    .toString()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+};
+
 export const Catalog = () => {
   const allProducts = (JsonData.Products || []).filter(
     (p) => p.isActive !== false
@@ -15,13 +25,14 @@ export const Catalog = () => {
   const [searchText, setSearchText] = useState("");
 
   const handleSearchChange = (e) => {
-  const value = e.target.value;
+    const value = e.target.value;
 
-  const sanitized = value
-    .normalize("NFD") 
-    .replace(/[^0-9a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]/g, ""); 
+    const sanitized = value.replace(
+      /[^0-9a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]/g,
+      ""
+    );
 
-  setSearchText(sanitized);
+    setSearchText(sanitized);
   };
 
   const categories = useMemo(() => {
@@ -41,7 +52,8 @@ export const Catalog = () => {
     setShowFiltersMobile(false);
   };
 
-  // 🔍 Filtro combinado: categoría + nombre
+  const normalizedSearch = normalizeText(searchText);
+
   const filteredProducts = allProducts.filter((p) => {
     const matchesCategory =
       selectedCategory === "TODOS" ||
@@ -49,12 +61,16 @@ export const Catalog = () => {
         ? p.category.includes(selectedCategory)
         : p.category === selectedCategory);
 
-    const matchesName = p.name
-      .toLowerCase()
-      .includes(searchText.toLowerCase());
+    const productNameNormalized = normalizeText(p.name);
+
+    const matchesName =
+      !normalizedSearch || productNameNormalized.includes(normalizedSearch);
 
     return matchesCategory && matchesName;
   });
+
+  const resultsCount = filteredProducts.length;
+  const hasSearch = searchText.trim() !== "";
 
   return (
     <div
@@ -104,22 +120,39 @@ export const Catalog = () => {
           WhatsApp para conocer precios, colores y disponibilidad.
         </p>
 
-        {/* 🔍 Buscador por nombre */}
-        <div style={{ marginBottom: 20 }}>
-          <input
-            type="text"
-            className="yb-search-input"
-            placeholder="Buscar por nombre..."
-            value={searchText}
-            onChange={handleSearchChange}
-            style={{
-              width: "100%",
-              maxWidth: 350,
-              padding: "8px 12px",
-              borderRadius: 6,
-              border: "1px solid #ddd",
-            }}
-          />
+        {/* 🔍 Buscador por nombre con restyling visual */}
+        <div className="yb-search-container">
+          <div className="yb-search-box">
+            <i
+              className="fa fa-search yb-search-icon"
+              aria-hidden="true"
+            ></i>
+            <input
+              type="text"
+              className="yb-search-input"
+              placeholder="Buscar por nombre..."
+              value={searchText}
+              onChange={handleSearchChange}
+              aria-label="Buscar producto por nombre"
+            />
+            {hasSearch && (
+              <button
+                type="button"
+                className="yb-search-clear-btn"
+                onClick={() => setSearchText("")}
+                aria-label="Limpiar búsqueda"
+              >
+                ×
+              </button>
+            )}
+          </div>
+
+          {hasSearch && (
+            <p className="yb-search-results-info">
+              <strong>{resultsCount}</strong> resultado
+              {resultsCount !== 1 ? "s" : ""} para “{searchText.trim()}”
+            </p>
+          )}
         </div>
 
         {/* Toggle móvil tipo "3 rayas" */}
@@ -218,10 +251,25 @@ export const Catalog = () => {
 
           {filteredProducts.length === 0 && (
             <div className="col-md-12">
-              <p>
-                No encontramos productos que coincidan con tu búsqueda 🐣. Prueba
-                con otro nombre o vuelve a &quot;Todos&quot;.
-              </p>
+              <div className="yb-catalog-no-results">
+                <p className="yb-catalog-no-results-title">
+                  No encontramos productos para “{searchText.trim()}” 🐣
+                </p>
+                <p className="yb-catalog-no-results-text">
+                  Prueba con otra palabra clave, revisa la ortografía o vuelve a
+                  ver todas las categorías.
+                </p>
+                <button
+                  type="button"
+                  className="btn btn-custom btn-sm"
+                  onClick={() => {
+                    setSearchText("");
+                    setSelectedCategory("TODOS");
+                  }}
+                >
+                  Limpiar filtros
+                </button>
+              </div>
             </div>
           )}
         </div>

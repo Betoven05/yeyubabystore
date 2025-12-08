@@ -34,7 +34,7 @@ export const AboutPage = ({ data }) => {
         />
         <meta
           property="og:image"
-          content="https://yeyubabystore.com/img/nosotros/yeyubabystore_web_03.jpg"
+          content="https://yeyubabystore.com/img/nosotros/yeyubabystore_web_10.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -45,7 +45,7 @@ export const AboutPage = ({ data }) => {
         />
         <meta
           name="twitter:image"
-          content="https://yeyubabystore.com/img/nosotros/yeyubabystore_web_03.jpg"
+          content="https://yeyubabystore.com/img/nosotros/yeyubabystore_web_10.jpg"
         />
       </Helmet>
 
@@ -79,7 +79,7 @@ export const AboutPage = ({ data }) => {
 
           <div className="col-md-6">
             <LazyImage
-              src="/img/nosotros/yeyubabystore_web_03.jpg"
+              src="/img/nosotros/yeyubabystore_web_10.jpg"
               alt="Yeyu Baby Store - productos para bebés"
               className="img-responsive"
               style={{

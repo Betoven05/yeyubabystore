@@ -110,6 +110,34 @@
       "description": "📎 Clips Sujetadores de Chupón\nAdiós a los chupetes perdidos 👶🏻💖\n\n⭐ Pack de 3 clips fáciles de usar\n\n📐 Longitud: 25 × 2.5 cm\n🔨 Material: poliéster + clip plástico resistente\n🎨 Múltiples colores y diseños"
     },
     {
+      "id": "prod-cubiertos-silicona-pack2",
+      "name": "Cubiertos de Silicona Pack 2",
+      "category": ["Accesorios"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "isActive": true,
+      "image": "img/productos/catalog/cubiertos-silicona-pack2-peru-yeyu.jpg",
+      "images": [
+        "img/productos/detalle/cubiertos-silicona-pack2-peru-yeyu-detalle01.jpg",
+        "img/productos/detalle/cubiertos-silicona-pack2-peru-yeyu-detalle02.jpg"
+      ],
+      "description": "🥄 Pack de Cubiertos de Silicona – 2 unidades\n\n⭐ Nuestro pack de 2 cubiertos de silicona alimentaria es suave, resistente y perfecto para bebés desde los 4 meses.\n✔ Libre de BPA\n✔ Suave para las encías\n✔ Ideal para empezar con la alimentación complementaria"
+    },
+    {
+      "id": "prod-cubiertos-silicona-pack3",
+      "name": "Cubiertos de Silicona Pack 3",
+      "category": ["Accesorios"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "isActive": true,
+      "image": "img/productos/catalog/cubiertos-silicona-pack3-peru-yeyu.jpg",
+      "images": [
+        "img/productos/detalle/cubiertos-silicona-pack3-peru-yeyu-detalle01.jpg",
+        "img/productos/detalle/cubiertos-silicona-pack3-peru-yeyu-detalle02.jpg"
+      ],
+      "description": "🥄 Pack de Cubiertos de Silicona – 3 unidades\n\nEste pack de 3 cubiertos de silicona alimentaria ofrece suavidad, resistencia y un diseño pensado para manos pequeñitas.\n✔ Libre de BPA\n✔ Suave para las encías\n✔ Ideal para empezar con la alimentación complementaria"
+    },
+    {
       "id": "prod-enterizo-navideño-c1",
       "name": "Enterizo Navideño para Bebes",
       "category": ["Ropa"],
@@ -121,6 +149,20 @@
         "img/productos/detalle/enterizo-navideño-bebe-c1-peru-yeyu-detalle01.jpg"
       ],
       "description": "🎄 Enterizo Navideño de algodon\n\nMuy comodo, regalo perfecto para el engreido de la casa en esta navidad ❄️🎅\n\nMaterial algodón + poliéster, tejido suave.\n📏 Talla unica: 53×29 cm (3–12m)\nAjuste con botones en el cuello y tobillos."
+    },
+    {
+      "id": "prod-erizo-didactico-caja",
+      "name": "Erizo Didactico de Colores en Caja",
+      "category": ["Juguetes"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "isActive": true,
+      "image": "img/productos/catalog/erizo-didactico-caja-peru-yeyu.jpg",
+      "images": [
+        "img/productos/detalle/erizo-didactico-caja-peru-yeyu-detalle01.jpg",
+        "img/productos/detalle/erizo-didactico-caja-peru-yeyu-detalle02.jpg"
+      ],
+      "description": "Erizo Didactico de Colores en Caja\n\nMaterial: Plastico\nNo Tóxico\nDimensiones: 15 cm x 19 cm x 15 cm \nEdad recomendada: 12 meses a más meses."
     },
     {
       "id": "prod-gorro-algodon-orejas-animales",
@@ -162,6 +204,20 @@
         "img/productos/detalle/laberinto-didactivo-madera-peru-yeyu-detalle01.jpg"
       ],
       "description": "Laberinto Didactico de madera para bebes 👶🏻\n\n Edad recomendada: 12–36 meses"
+    },
+    {
+      "id": "prod-lentes-sol-estuche",
+      "name": "Lentes de Sol para Bebes con Estuche",
+      "category": ["Accesorios","Verano"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "isActive": true,
+      "image": "img/productos/catalog/lentes-sol-estuche-peru-yeyu.jpg",
+      "images": [
+        "img/productos/detalle/lentes-sol-estuche-peru-yeyu-detalle01.jpg",
+        "img/productos/detalle/lentes-sol-estuche-peru-yeyu-detalle02.jpg"
+      ],
+      "description": "😎✨ Lentes de sol con estuche para niños y niñas\n\n¡Protege los ojitos de tu peque con estilo! 🧒🌞\n⭐ Marco de plástico flexible\n⭐ Lentes de espejo que reducen el deslumbramiento\n⭐ Estilo oval para un ajuste seguro y cómodo\n⭐ Disponibles en negro, azul y rosado"
     },
     {
       "id": "prod-libro-estimulacion-animales",
