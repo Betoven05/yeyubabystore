@@ -20,7 +20,7 @@
         "img/productos/detalle/aquashoes-bebe-peru-yeyu-detalle02.jpg",
         "img/productos/detalle/aquashoes-bebe-peru-yeyu-detalle03.jpg"
       ],
-      "description": "👶🏻 Aqua Shoes - Zapatillas de Piscina para Bebes 🏖️\n\nDisfruta del verano con tu bebé de forma segura 😊.\nZapatillas antideslizantes para piscina, transpirables y flexibles. Totalmente respetuosas con el pie de tu bebé 👶🏻.\n\n📐 Tallas\n• XXS: 12 cm - Edad entre 3 a 9 meses\n• XS: 12.5 cm - Edad entre 6 a 12 meses\n• S: 13.5 cm - Edad entre 12 a 24 meses\n• M: 14.5 cm - Edad entre 24 a 36 meses"
+      "description": "👶🏻 Aqua Shoes - Zapatillas de Piscina para Bebes 🏖️\n\nDisfruta del verano con tu bebé de forma segura 😊.\nZapatillas antideslizantes para piscina, transpirables y flexibles. Totalmente respetuosas con el pie de tu bebé 👶🏻.\n\n📐 Tallas\n• XXS: 12 cm | 3 a 9 meses | EUR 18–19 | PE 21\n• XS: 13 cm | 6 a 12 meses | EUR 20–21 | PE 22\n• S: 14 cm | 12 a 24 meses | EUR 22–23 | PE 23\n• M: 15 cm | 24 a 36 meses | EUR 23–24 | PE 24"
     },
     {
       "id": "prod-bolsa-panalera-sunveno",
@@ -215,9 +215,10 @@
       "image": "img/productos/catalog/lentes-sol-estuche-peru-yeyu.jpg",
       "images": [
         "img/productos/detalle/lentes-sol-estuche-peru-yeyu-detalle01.jpg",
-        "img/productos/detalle/lentes-sol-estuche-peru-yeyu-detalle02.jpg"
+        "img/productos/detalle/lentes-sol-estuche-peru-yeyu-detalle02.jpg",
+        "img/productos/detalle/lentes-sol-estuche-peru-yeyu-detalle03.jpg"
       ],
-      "description": "😎✨ Lentes de sol con estuche para niños y niñas\n\n¡Protege los ojitos de tu peque con estilo! 🧒🌞\n⭐ Marco de plástico flexible\n⭐ Lentes de espejo que reducen el deslumbramiento\n⭐ Estilo oval para un ajuste seguro y cómodo\n⭐ Disponibles en negro, azul y rosado"
+      "description": "😎✨ Lentes de sol con estuche para niños y niñas\n\n¡Protege los ojitos de tu peque con estilo! 🧒🌞\n⭐ Marco de plástico flexible\n⭐ Lentes de espejo que reducen el deslumbramiento\n⭐ Estilo oval para un ajuste seguro y cómodo\n⭐ Protección UV\n⭐ Facil limpieza\n⭐ Disponibles en negro, azul y rosado"
     },
     {
       "id": "prod-libro-estimulacion-animales",
@@ -402,7 +403,8 @@
       "image": "img/productos/catalog/muñeco-felpa-apego-peru-yeyu.jpg",
       "images": [
         "img/productos/detalle/muñeco-felpa-apego-peru-yeyu-detalle01.jpg",
-        "img/productos/detalle/muñeco-felpa-apego-peru-yeyu-detalle02.jpg"
+        "img/productos/detalle/muñeco-felpa-apego-peru-yeyu-detalle02.jpg",
+        "img/productos/detalle/muñeco-felpa-apego-peru-yeyu-detalle03.jpg"
       ],
       "description": "🐰 Manta Peluche de Apego 🍼\nLa compañera ideal para tu bebé 💛\n\n✔️ Texturas suaves y sonidos estimulantes\n✔️ Mordedor de silicona para aliviar encías\n✔️ Ayuda a dormir al bebé\n✔️ Estimula la vista, el tacto y la etapa bucal\n📏 Medidas: 25 × 25 cm\n✨ ¡Un regalo perfecto para recién nacidos! 🎁"
     },
@@ -513,27 +515,58 @@
       "tag": "TOP",
       "isSale": false,
       "isActive": true,
-      "image": "img/productos/catalog/sombrero-sol-algodon-bebe-peru-yeyu.jpg",
+      "image": "img/productos/catalog/sombrero-algodon-bebe-peru-yeyu.jpg",
       "images": [
-        "img/productos/detalle/sombrero-sol-algodon-bebe-peru-yeyu-detalle01.jpg",
-        "img/productos/detalle/sombrero-sol-algodon-bebe-peru-yeyu-detalle02.jpg"
+        "img/productos/detalle/sombrero-algodon-bebe-peru-yeyu-detalle01.jpg",
+        "img/productos/detalle/sombrero-algodon-bebe-peru-yeyu-detalle02.jpg",
+        "img/productos/detalle/sombrero-algodon-bebe-peru-yeyu-detalle03.jpg"
       ],
       "description": "👒 Sombreros para Bebé\nEstilo y protección bajo el sol ☀️🏖️\n\n🤍 Básicos esenciales\n🎨 Colores: azul, rosado, crema, blanco y más\n📏 Talla XS (46 cm): 3–12 meses"
     },
     {
-      "id": "prod-sombrero-sol-diseno-c1",
-      "name": "Sombrero de Sol con Diseños",
+      "id": "prod-sombrero-diseno-c1",
+      "name": "Sombrero con diseños Modelo 1",
       "category": ["Verano", "Ropa", "Accesorios"],
       "tag": "TOP",
       "isSale": false,
       "isActive": true,
-      "image": "img/productos/catalog/sombrero-sol-diseños-bebe-peru-yeyu.jpg",
+      "image": "img/productos/catalog/sombrero-diseños-c1-bebe-peru-yeyu.jpg",
       "images": [
-        "img/productos/detalle/sombrero-sol-diseños-bebe-peru-yeyu-detalle01.jpg",
-        "img/productos/detalle/sombrero-sol-diseños-bebe-peru-yeyu-detalle02.jpg",
-        "img/productos/detalle/sombrero-sol-diseños-bebe-peru-yeyu-detalle03.jpg"
+        "img/productos/detalle/sombrero-diseños-c1-bebe-peru-yeyu-detalle01.jpg",
+        "img/productos/detalle/sombrero-diseños-c1-bebe-peru-yeyu-detalle02.jpg",
+        "img/productos/detalle/sombrero-diseños-c1-bebe-peru-yeyu-detalle03.jpg"
       ],
-      "description": "👒 Sombreros para Bebé\nEstilo y protección bajo el sol ☀️🏖️\n\n🎨 Diseños divertidos\n📏 Talla S (50 cm): 9–24 meses\n📏 Talla M (52 cm): 24–48 meses"
+      "description": "👒 Sombreros para Bebé y Niños\nEstilo y protección bajo el sol ☀️🏖️\n\n🎨 Diseños divertidos\n📏 Talla S (50 cm): 9–24 meses\n📏 Talla M (52 cm): 24–48 meses"
+    },
+    {
+      "id": "prod-sombrero-diseno-c2",
+      "name": "Sombrero con diseños Modelo 2",
+      "category": ["Verano", "Ropa", "Accesorios"],
+      "tag": "TOP",
+      "isSale": false,
+      "isActive": true,
+      "image": "img/productos/catalog/sombrero-diseños-c2-bebe-peru-yeyu.jpg",
+      "images": [
+        "img/productos/detalle/sombrero-diseños-c2-bebe-peru-yeyu-detalle01.jpg",
+        "img/productos/detalle/sombrero-diseños-c2-bebe-peru-yeyu-detalle02.jpg",
+        "img/productos/detalle/sombrero-diseños-c2-bebe-peru-yeyu-detalle03.jpg"
+      ],
+      "description": "👒 Sombreros para Bebé y Niños\nEstilo y protección bajo el sol ☀️🏖️\n\n🎨 Diseños divertidos\n📏 Talla S (50 cm): 9–24 meses\n📏 Talla M (52 cm): 24–48 meses"
+    },
+    {
+      "id": "prod-sonajero-colgante-individual-c1",
+      "name": "Sonajero Colgante Individual de animales",
+      "category": ["Juguetes"],
+      "tag": "NUEVO",
+      "isSale": false,
+      "isActive": true,
+      "image": "img/productos/catalog/sonajero-colgante-individual-c1-peru-yeyu.jpg",
+      "images": [
+        "img/productos/detalle/sonajero-colgante-individual-c1-peru-yeyu-detalle01.jpg",
+        "img/productos/detalle/sonajero-colgante-individual-c1-peru-yeyu-detalle02.jpg",
+        "img/productos/detalle/sonajero-colgante-individual-c1-peru-yeyu-detalle03.jpg"
+      ],
+      "description": "🌟 Sonajero Colgante Individual de animales 🐣"
     },
     {
       "id": "prod-sonajero-colgante-individual-c2",
@@ -545,7 +578,8 @@
       "image": "img/productos/catalog/sonajero-colgante-individual-c2-peru-yeyu.jpg",
       "images": [
         "img/productos/detalle/sonajero-colgante-individual-c2-peru-yeyu-detalle01.jpg",
-        "img/productos/detalle/sonajero-colgante-individual-c2-peru-yeyu-detalle02.jpg"
+        "img/productos/detalle/sonajero-colgante-individual-c2-peru-yeyu-detalle02.jpg",
+        "img/productos/detalle/sonajero-colgante-individual-c2-peru-yeyu-detalle03.jpg"
       ],
       "description": "🌟 Sonajero Colgante Individual de animales 🐣"
     },

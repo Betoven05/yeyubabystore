@@ -11,6 +11,7 @@ import { AboutPage } from "./pages/About";
 import { Product } from "./pages/Product";
 import JsonData from "./data/data.json";
 import ScrollToTop from "./components/ScrollToTop";
+import { WhatsAppFloating } from "./components/WhatsAppFloating";
 
 const helmetContext = {};
 
@@ -34,7 +35,7 @@ const App = () => {
           <Route path="/nosotros" element={<AboutPage data={landingPageData} />} />
           <Route path="/producto/:id" element={<Product />} />
         </Routes>
-
+        <WhatsAppFloating />
         <Footer />
       </Router>
     </HelmetProvider>
